@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Wellness Insights | Dr. Lakshmi's Homoeo Clinic</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Plus Jakarta Sans', 'sans-serif'],
+                },
+                colors: {
+                    medical: {
+                        50: '#FFF8F6',
+                        100: '#FDEDEC',
+                        200: '#F8D7D4',
+                        300: '#EFB5AF',
+                        400: '#D9877D',
+                        500: '#B84E4E',
+                        600: '#8B1E2D',
+                        700: '#6D1420',
+                        800: '#521019',
+                        900: '#3A0B12',
+                        950: '#220509'
+                    },
+                    gold: {
+                        50: '#FFFDF5',
+                        100: '#FFF8E1',
+                        200: '#FBE9A7',
+                        300: '#F5D76E',
+                        400: '#EAC54F',
+                        500: '#D4AF37',
+                        600: '#B89228',
+                        700: '#96741E',
+                        800: '#755816',
+                        900: '#5A4310'
+                    },
+                    cream: {
+                        50: '#FFFDF9',
+                        100: '#FCF8F1',
+                        200: '#F7F1E6'
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    body {
+        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        background: #FFFDF9;
+        color: #3A0B12;
+    }
+
+    .glass-nav {
+        background: rgba(255, 253, 249, 0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+        box-shadow: 0 2px 20px rgba(139, 30, 45, 0.08);
+    }
+
+    .blog-hero {
+        background:
+            linear-gradient(
+                135deg,
+                #3A0B12 0%,
+                #6D1420 40%,
+                #8B1E2D 100%
+            );
+        position: relative;
+    }
+
+    .blog-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(circle at top right,
+            rgba(212,175,55,0.15),
+            transparent 35%);
+        pointer-events: none;
+    }
+</style>
+</head>
+<body class="bg-slate-50 text-gray-800 antialiased selection:bg-medical-100 selection:text-medical-900">
+
+    <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
+            
+         <a href="#" onclick="switchView('main')" class="flex items-center gap-2.5 max-w-[65%] sm:max-w-none group focus:outline-none flex-shrink-0">
+                    <img src="assets/korv emr  (9).png" 
+                         alt="Dr. Lakshmi's Homoeo Clinic Logo" 
+                         class="w-12 h-12 sm:w-16 sm:h-16 object-contain flex-shrink-0">
+                    <div class="min-w-0">
+                        <h1 class="text-sm sm:text-lg font-extrabold tracking-tight text-gray-900 leading-none truncate">Dr. Lakshmi's</h1>
+                        <span class="text-[9px] sm:text-[10px] font-bold tracking-widest text-medical-600 uppercase block mt-0.5 truncate">Homoeo Clinic</span>
+                    </div>
+                </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <a href="index.html" class="hover:text-medical-600 transition-colors">Home</a>
+                <a href="index.html#about" class="hover:text-medical-600 transition-colors">Our Doctors</a>
+                <a href="index.html#treatments" class="hover:text-medical-600 transition-colors">Treatments</a>
+                <a href="index.html#benefits" class="hover:text-medical-600 transition-colors">Benefits</a>
+                <a href="index.html#testimonials" class="hover:text-medical-600 transition-colors">Success Stories</a>
+                <a href="index.html#faqs" class="hover:text-medical-600 transition-colors">FAQ</a>
+                <a href="blogs.html" class="text-medical-600 font-bold border-b-2 border-medical-500 pb-0.5">Blogs</a>
+                <a href="index.html#contact" class="hover:text-medical-600 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="openAppointmentModal()" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 font-bold text-sm text-white bg-medical-600 rounded-xl shadow-md transition-all hover:bg-medical-700">
+                    Book Appointment
+                </button>
+                   <a href="https://wa.me/919677173387?text=Hi%20want%20to%20book%20an%20appointment" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="p-1.5 bg-emerald-50 text-[#25D366] rounded-xl flex items-center justify-center w-7.5 h-7.5 sm:w-8 sm:h-8 shadow-inner border border-emerald-100/60"
+                       title="WhatsApp Booking">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.137-.241-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.401-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.135-1.61a11.822 11.822 0 005.904 1.599h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                <!-- Interactive High-Fidelity Hamburger Menu Toggle Button -->
+                <button type="button" onclick="toggleMobileMenu()" class="p-2 lg:hidden bg-white border border-gray-200 text-gray-700 rounded-xl focus:outline-none flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 active:bg-slate-50 touch-manipulation relative z-50" aria-label="Toggle Mobile Menu">
+                    <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 shadow-inner">
+            <a href="index.html" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">Home</a>
+            <a href="index.html#about" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">Our Doctors</a>
+            <a href="index.html#treatments" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">Treatments</a>
+            <a href="index.html#benefits" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">Benefits</a>
+            <a href="index.html#testimonials" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">Success Stories</a>
+            <a href="index.html#faqs" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">FAQ</a>
+            <a href="blogs.html" onclick="toggleMobileMenu();" class="block text-sm font-bold text-medical-600">Blogs</a>
+            <a href="index.html#contact" onclick="toggleMobileMenu();" class="block text-sm font-semibold text-gray-700">Contact</a>
+            <button onclick="toggleMobileMenu(); openAppointmentModal();" class="w-full bg-medical-600 text-white font-bold py-2.5 rounded-xl text-center text-sm">Book Appointment</button>
+        </div>
+    </header>
+
+    <section class="blog-hero pt-32 pb-16 sm:pb-20 text-center text-white px-4 sm:px-6 relative">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-medical-500/20 text-medical-300 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider border border-medical-500/30">
+                📰 Clinical Knowledge Base
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">Health & Wellness <span class="text-medical-400">Insights</span></h2>
+            <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed px-2">
+                Expert articles on personalized homoeopathy, constitutional recovery, chronic care solutions, and living your healthiest life.
+            </p>
+            
+            <div class="pt-4 max-w-md mx-auto relative px-2 sm:px-0">
+                <input type="text" id="blogSearchInput" onkeyup="filterBlogArticles()" placeholder="Search wellness articles..." class="w-full bg-slate-900/60 text-white placeholder-slate-500 text-xs sm:text-sm border border-slate-800 focus:border-medical-400 p-3.5 pl-10 rounded-xl focus:outline-none transition-all">
+                <span class="absolute left-6 sm:left-3.5 top-[29px] sm:top-[27px] text-slate-500 text-xs sm:text-sm">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+            
+            <aside class="lg:col-span-3 space-y-6 lg:sticky lg:top-24">
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col items-center text-center">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-slate-50 border border-gray-100 flex items-center justify-center font-extrabold text-lg text-blue-600">G</div>
+                        <h4 class="font-bold text-slate-800 text-sm tracking-wide">Google Reviews</h4>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="flex items-center justify-center gap-2">
+                            <span class="text-3xl font-extrabold text-slate-900 tracking-tight">4.4</span>
+                            <div class="text-amber-400 text-base">★★★★★</div>
+                        </div>
+                        <span class="text-[11px] font-bold text-gray-400 uppercase block tracking-wider">Based on 14 patient logs</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm space-y-3">
+                    <h3 class="font-bold text-slate-900 text-xs uppercase tracking-wider border-b border-gray-100 pb-2">Categories</h3>
+                    <div class="flex flex-col gap-1 text-xs font-semibold" id="sidebarCategoryContainer"></div>
+                </div>
+
+                <div class="bg-gradient-to-br from-medical-950 to-medical-900 text-white p-6 rounded-2xl border border-medical-800 shadow-md space-y-4">
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-sm tracking-wide">Stay Updated</h4>
+                        <p class="text-[11px] text-slate-400 leading-normal">Get the latest clinical health insights delivered directly to your email inbox grid.</p>
+                    </div>
+                    <form onsubmit="event.preventDefault(); alert('✓ Subscribed Successfully!\nYour data is secure.'); this.reset();" class="space-y-2">
+                        <input type="email" required placeholder="Your email address..." class="w-full bg-white/5 border border-white/10 p-2.5 text-xs rounded-xl focus:outline-none focus:border-medical-400 placeholder-slate-500 text-white">
+                        <button type="submit" class="w-full py-2.5 bg-medical-500 hover:bg-medical-600 text-white font-bold text-xs rounded-xl transition-all shadow">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+
+            <section class="lg:col-span-9 space-y-6 w-full">
+                <div class="flex justify-between items-center border-b border-gray-200 pb-3 px-1">
+                    <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase tracking-wide">All Articles</h3>
+                    <span class="text-xs font-semibold text-slate-400" id="articleCountLabel">Processing...</span>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-6 w-full" id="blogGridItemsContainer"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#040814] text-slate-300 pt-16 pb-8 px-6 border-t border-slate-900 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800/60">
+            <div class="md:col-span-4 space-y-4">
+<div class="flex items-center gap-3">
+    <img
+        src="assets/korv emr  (8).png"
+        alt="Dr. Lakshmi's Homoeo Clinic"
+        class="h-16 w-auto object-contain"
+    />
+
+    <div>
+        <span class="text-base font-extrabold text-white tracking-tight block">
+            Dr. Lakshmi's
+        </span>
+
+        <span class="text-[10px] font-bold tracking-[0.2em] text-gold-500 uppercase block mt-0.5">
+            Homoeo Clinic
+        </span>
+    </div>
+</div>
+                <p class="text-slate-300 max-w-xs leading-relaxed text-xs">
+                    Board certified physicians specializing in non-surgical regenerative medicine and classical holistic homoeopathy since 2011.
+                </p>
+                <div class="flex gap-4 pt-2">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300"><svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300"><svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300"><svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2.18" ry="2.18"/><path d="M10 8l5 3-5 3V8z"/></svg></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300"><svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300"><svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg></a>
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-3.5">
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs">Services</h4>
+                <ul class="space-y-4 text-slate-300 text-sm">
+                    <li><a href="index.html#treatments" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Women's Wellness</a></li>
+                    <li><a href="index.html#treatments" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Pediatric Care</a></li>
+                    <li><a href="index.html#treatments" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Allergy Desensitization</a></li>
+                    <li><a href="index.html#treatments" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Advanced Skin & Hair Care</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3 space-y-3.5">
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs">Contact Us</h4>
+                <div class="space-y-4 text-slate-300 text-sm">
+                    <div class="flex items-start gap-3 group">
+                        <div class="mt-0.5 text-medical-400 flex-shrink-0"><svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                        <div><a href="tel:9677173387" class="font-bold text-white hover:text-medical-400 transition-colors block leading-none text-sm sm:text-base">+91 96771 73387</a><span class="text-[10px] text-slate-500 block mt-1 font-medium">Available 24/7 Desk Line</span></div>
+                    </div>
+                    <div class="flex items-center gap-3 group">
+                        <div class="text-medical-400 flex-shrink-0"><svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                        <a href="mailto:info@drpiyushlaxmi.com" class="hover:text-white font-medium transition-colors text-xs sm:text-sm truncate">info@drpiyushlaxmi.com</a>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-0.5 text-medical-400 flex-shrink-0"><svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <p class="leading-tight font-medium text-xs sm:text-sm">Monday - Saturday:<br><span class="text-slate-400 font-normal text-xs">10:00 AM - 8:30 PM</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-3 space-y-3.5">
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs">Our Locations</h4>
+                <ul class="space-y-3 text-slate-300 text-xs sm:text-sm">
+                    <li><a href="https://maps.google.com/?q=Medavakkam,Chennai" target="_blank" rel="noopener noreferrer" class="hover:text-medical-400 font-medium transition-colors flex items-center gap-2 group"><span class="text-base transform group-hover:scale-110 transition-transform">📍</span><span>Medavakkam HQ, Chennai</span></a></li>
+                    <li><a href="https://maps.google.com/?q=S.Kolathur,Chennai" target="_blank" rel="noopener noreferrer" class="hover:text-medical-400 font-medium transition-colors flex items-center gap-2 group"><span class="text-base transform group-hover:scale-110 transition-transform">📍</span><span>S.Kolathur Hub, Chennai</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-500 font-medium gap-4 text-center sm:text-left">
+            <p>© 2026 Dr. Lakshmi's Homoeo Clinic. All Rights Reserved.</p>
+            <a href="#" onclick="alert('Displaying clinical privacy guidelines standard documentation...')" class="hover:text-slate-300 transition-colors uppercase font-bold tracking-wider text-[9px]">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <div id="appointmentIntakeModal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-white rounded-[2rem] max-w-md w-full p-5 sm:p-8 shadow-2xl relative transform scale-95 transition-transform duration-300">
+            <button onclick="closeAppointmentModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-sm font-bold text-gray-500 hover:text-gray-800 focus:outline-none">✕</button>
+            <div class="text-center mb-6">
+                <span class="text-2xl">📅</span>
+                <h3 class="text-lg font-bold text-slate-900 mt-1">Request Consultation Appointment</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Submitting alerts our scheduling grid directly via secure email integration routing channels.</p>
+            </div>
+            <form id="modalAppointmentForm" onsubmit="processFormTransmission(event)" class="space-y-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Patient Full Name *</label>
+                    <input type="text" id="modalName" required class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Contact Phone Number *</label>
+                    <input type="tel" id="modalPhone" required class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Target Date *</label>
+                        <input type="date" id="modalDate" required class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Select Location Branch *</label>
+                        <select id="modalBranch" class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                            <option value="Medavakkam HQ Office">Medavakkam HQ</option>
+                            <option value="S. Kolathur Branch Center">S. Kolathur Branch</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="w-full py-3 bg-medical-600 hover:bg-medical-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-colors">Confirm & Send Alert Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="blog-data.js"></script>
+    <script>
+        let currentCategoryFilter = "all";
+
+        function initializeBlogEngine() {
+            renderSidebarCategories();
+            renderArticlesGrid();
+        }
+
+        function renderSidebarCategories() {
+            const container = document.getElementById('sidebarCategoryContainer');
+            const counts = { all: blogPostsArray.length, science: 0, women: 0, pediatric: 0, Sudharsam: 0,};
+            blogPostsArray.forEach(post => { if(counts[post.categoryKey] !== undefined) counts[post.categoryKey]++; });
+
+            container.innerHTML = `
+                <button onclick="setCategoryFilter('all')" id="catBtn-all" class="w-full flex justify-between items-center p-2.5 rounded-lg bg-medical-600 text-white transition-all text-left shadow-sm">
+                    <span>All Insights</span><span class="bg-medical-700/50 px-2 py-0.5 rounded text-[10px]">${counts.all}</span>
+                </button>
+                ${Object.keys(categoriesMap).map(key => `
+                    <button onclick="setCategoryFilter('${key}')" id="catBtn-${key}" class="w-full flex justify-between items-center p-2.5 rounded-lg text-slate-600 hover:bg-slate-50 transition-all text-left">
+                        <span>${categoriesMap[key].name}</span><span class="bg-slate-100 px-2 py-0.5 rounded text-[10px] text-slate-500">${counts[key]}</span>
+                    </button>
+                `).join('')}
+            `;
+        }
+
+        function renderArticlesGrid() {
+            const container = document.getElementById('blogGridItemsContainer');
+            const searchQuery = document.getElementById('blogSearchInput').value.toLowerCase().trim();
+            let matchedCounter = 0;
+            let htmlBuffer = "";
+
+            blogPostsArray.forEach(post => {
+                const categoryMatch = (currentCategoryFilter === 'all' || post.categoryKey === currentCategoryFilter);
+                const titleMatch = post.title.toLowerCase().includes(searchQuery);
+                const descMatch = post.description.toLowerCase().includes(searchQuery);
+                
+                if (categoryMatch && (titleMatch || descMatch)) {
+                    matchedCounter++;
+                    htmlBuffer += `
+                        <article class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+                            <div>
+                                <div class="h-44 overflow-hidden relative">
+                                    <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover">
+                                    <span class="absolute top-3 left-3 bg-medical-950/90 text-medical-200 text-[10px] font-bold px-2 py-0.5 rounded border border-medical-800">${categoriesMap[post.categoryKey].name}</span>
+                                </div>
+                                <div class="p-5 space-y-2.5">
+                                    <h4 class="text-base font-bold text-slate-900 block-title leading-tight">${post.title}</h4>
+                                    <p class="text-xs text-slate-500 block-desc leading-relaxed line-clamp-3">${post.description}</p>
+                                </div>
+                            </div>
+                            <div class="p-5 pt-0 mt-2 flex items-center justify-between border-t border-gray-100 pt-4">
+                                <span class="text-[10px] font-bold text-medical-600 bg-medical-50 px-2 py-1 rounded">Dr. Lakshmi Team</span>
+                                <a href="article.html?id=${post.slug}" class="text-xs font-bold text-medical-600 hover:text-medical-800 transition-colors h-9 px-3 flex items-center justify-center rounded-lg hover:bg-slate-50">Read More ➔</a>
+                            </div>
+                        </article>
+                    `;
+                }
+            });
+            container.innerHTML = htmlBuffer;
+            document.getElementById('articleCountLabel').innerText = `Showing ${matchedCounter} articles`;
+        }
+
+        function setCategoryFilter(category) {
+            currentCategoryFilter = category;
+            renderArticlesGrid();
+        }
+
+        function filterBlogArticles() { renderArticlesGrid(); }
+        function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
+        function openAppointmentModal() { document.getElementById('appointmentIntakeModal').classList.remove('hidden'); document.getElementById('appointmentIntakeModal').classList.add('flex'); }
+        function closeAppointmentModal() { document.getElementById('appointmentIntakeModal').classList.add('hidden'); }
+        window.onload = initializeBlogEngine;
+    </script>
+</body>
+</html>
