@@ -172,13 +172,21 @@ tailwind.config = {
                 
                 <!-- Anti-Shrink Mobile Brand Logo Container -->
 <!-- Clean Image Logo with No Backgrounds or Extras -->
-                <a href="#" onclick="switchView('main')" class="flex items-center gap-2.5 max-w-[65%] sm:max-w-none group focus:outline-none flex-shrink-0">
+<a href="#" onclick="switchView('main')" class="flex items-center gap-3 max-w-[65%] sm:max-w-none group focus:outline-none flex-shrink-0">
                     <img src="assets/korv emr  (9).png" 
                          alt="Dr. Lakshmi's Homoeo Clinic Logo" 
-                         class="w-12 h-12 sm:w-16 sm:h-16 object-contain flex-shrink-0">
-                    <div class="min-w-0">
-                        <h1 class="text-sm sm:text-lg font-extrabold tracking-tight text-gray-900 leading-none truncate">Dr. Lakshmi's</h1>
-                        <span class="text-[9px] sm:text-[10px] font-bold tracking-widest text-medical-600 uppercase block mt-0.5 truncate">Homoeo Clinic</span>
+                         class="w-12 h-12 sm:w-14 sm:h-14 object-contain flex-shrink-0 transform group-hover:scale-105 transition-transform duration-300">
+                    
+                    <div class="min-w-0 flex flex-col justify-center space-y-0.5">
+                        <h1 class="text-sm sm:text-base font-extrabold tracking-tight text-gray-900 leading-tight truncate">
+                            Dr. Lakshmi's
+                        </h1>
+                        <span class="text-[9px] sm:text-[10px] font-bold tracking-widest text-medical-600 uppercase block leading-none truncate">
+                            Homoeo Clinic
+                        </span>
+                        <span class="text-[8px] sm:text-[9px] font-medium tracking-normal text-slate-400 italic block leading-none pt-0.5 truncate">
+                            Families Health Destination
+                        </span>
                     </div>
                 </a>
 
@@ -277,70 +285,147 @@ tailwind.config = {
 <!-- ========================================== -->
         <!-- PREMIUM DYNAMIC HERO SEGMENT               -->
         <!-- ========================================== -->
-        <section class="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-medical-50 via-white to-emerald-50/50 px-4 sm:px-8 sm:py-20 lg:py-0">
+<section class="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-medical-50 via-white to-emerald-50/50 px-4 sm:px-8 sm:py-20 lg:py-0">
             
             <!-- Ambient Homeopathy Watermark/Faded Medical Graphics Overlay Layout -->
             <div class="absolute inset-0 opacity-[0.06] bg-cover bg-center mix-blend-overlay pointer-events-none" 
-                 style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1920&q=80');">
+                  style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1920&q=80');">
             </div>
             <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-medical-100/20 to-transparent pointer-events-none hidden lg:block"></div>
 
-            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10 py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10 py-12 sm:py-24">
                 
                 <!-- Left Content Column -->
                 <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left" data-aos="fade-right">
                     
                     <div class="inline-flex items-center gap-2 bg-white border border-medical-200/80 px-4 py-2 rounded-full shadow-sm mx-auto lg:mx-0">
                         <span class="w-2.5 h-2.5 rounded-full bg-medical-500 animate-pulse"></span>
-                        <span class="text-xs sm:text-sm font-bold tracking-wider text-medical-800 uppercase">Premium Classical Homoeopathy</span>
+                        <span class="text-xs sm:text-sm font-bold tracking-wider text-medical-800 uppercase">Premium Homoeopathic family clinic</span>
                     </div>
                     
-                    <div class="space-y-4">
+                    <div class="space-y-3 sm:space-y-4">
                         <h3 class="text-xs sm:text-sm font-extrabold tracking-widest text-medical-600 uppercase">Welcome To</h3>
-                        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.12] tracking-tight">
-                            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-slate-950 via-medical-900 to-medical-700 bg-size-200 drop-shadow-sm filter">
+                        <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+                            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-slate-950 via-medical-900 to-medical-700 bg-size-200">
                                 Dr. Lakshmi's
                             </span>
-                            <span class="block mt-2 text-medical-600 border-b-4 border-medical-200 inline-block pb-1">
+                            <span class="block mt-1 sm:mt-2 text-medical-600 border-b-4 border-medical-200 inline-block pb-1">
                                 Homoeo Clinic
                             </span>
                         </h2>
-                        <p class="text-xl sm:text-2xl font-bold text-slate-700 pt-2 tracking-tight">
-                            Gentle Healing. Root-Cause Restoration.
+                        <p class="text-lg sm:text-2xl font-bold text-slate-700 pt-1 tracking-tight">
+                            Personalized Homeopathic Treatment for the Whole Family
                         </p>
                     </div>
                     
-                    <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                        Where clinical precision meets natural medical intelligence. We develop personalized, deep-acting constitutional frameworks to restore structural cellular health safely, without suppressive side effects.
+                    <p class="text-sm sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        We provide personalized homeopathic treatment for skin problems, hair fall, thyroid disorders, PCOS, allergies, asthma, joint pain, digestive issues, and children's health concerns.
                     </p>
                     
                     <!-- Responsive Button Array Grid Layout Matrix -->
-                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 max-w-md sm:max-w-none mx-auto lg:mx-0">
-                        <button onclick="openAppointmentModal()" class="w-full sm:w-auto px-8 py-4 bg-medical-600 hover:bg-medical-700 text-white font-extrabold rounded-2xl shadow-xl shadow-medical-600/20 hover:shadow-medical-700/30 transition-all duration-300 transform hover:-translate-y-0.5 text-base focus:outline-none">
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-2 max-w-md sm:max-w-none mx-auto lg:mx-0">
+                        <button onclick="openAppointmentModal()" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-medical-600 hover:bg-medical-700 text-white font-extrabold rounded-xl sm:rounded-2xl shadow-xl shadow-medical-600/20 hover:shadow-medical-700/30 transition-all duration-300 transform hover:-translate-y-0.5 text-sm sm:text-base focus:outline-none">
                             Schedule Appointment
                         </button>
-                        <a href="#treatments" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-800 font-extrabold rounded-2xl border-2 border-slate-200 shadow-sm transition-all duration-300 flex items-center justify-center text-base">
+                        <a href="#treatments" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-white hover:bg-slate-50 text-slate-800 font-extrabold rounded-xl sm:rounded-2xl border-2 border-slate-200 shadow-sm transition-all duration-300 flex items-center justify-center text-sm sm:text-base">
                             Explore Treatments
                         </a>
                     </div>
+
+                    <!-- NEW MOBILE-OPTIMIZED VISUAL TREATMENT GRID -->
+                    <div class="pt-6 border-t border-slate-100 max-w-2xl mx-auto lg:mx-0">
+                        <span class="text-[9px] sm:text-[10px] tracking-widest font-extrabold text-slate-400 uppercase block mb-3 text-center lg:text-left">
+                            Conditions We Treat:
+                        </span>
+                        
+                        <!-- 2 Columns on Mobile, 3 Columns on Tablet/Desktop -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 text-left">
+                            
+                            <!-- Skin Diseases -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Skin Diseases</span>
+                            </div>
+                            
+                            <!-- Hair Fall -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.871 4A17.926 17.926 0 003 12c0 2.871.67 5.585 1.871 8m14.13 0a17.93 17.93 0 001.87-8c0-2.871-.67-5.585-1.871-8M9 9h1.5M9 12h3m-3 3h1.5M15 9h.01M15 12h.01M15 15h.01"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Hair & Dandruff</span>
+                            </div>
+                            
+                            <!-- Thyroid -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Thyroid Care</span>
+                            </div>
+                            
+                            <!-- PCOS -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Women's Health</span>
+                            </div>
+                            
+                            <!-- Migraine -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Migraine Relief</span>
+                            </div>
+                            
+                            <!-- Asthma -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Asthma & Allergy</span>
+                            </div>
+                            
+                            <!-- Arthritis -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-7 7m7-7L5 5"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Joint & Arthritis</span>
+                            </div>
+                            
+                            <!-- Children's Health -->
+                            <div class="flex items-center gap-2 bg-white border border-slate-100 p-2 sm:p-2.5 rounded-xl shadow-sm">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100/60 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <span class="text-[11px] sm:text-sm font-bold text-slate-800 tracking-tight leading-tight">Child Health</span>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
                 
-                <!-- Right Upscaled Column Imagery Frame (100% Mobile Compatible & Maximized Layout) -->
+                <!-- Right Column Imagery Frame -->
                 <div class="lg:col-span-5 relative w-full pt-4 sm:pt-8 lg:pt-0" data-aos="fade-left" data-aos-delay="100">
                     <div class="relative mx-auto max-w-md sm:max-w-lg lg:max-w-none w-full px-2 sm:px-0">
                         
-                        <!-- Premium Background Stack Geometric Shadow Layer Shapes -->
+                        <!-- Premium Background Stack Shapes -->
                         <div class="absolute inset-0 bg-gradient-to-br from-medical-200/60 to-medical-300/40 rounded-[2.5rem] transform rotate-3 scale-98 shadow-md"></div>
                         <div class="absolute inset-0 bg-gradient-to-tr from-emerald-100/50 to-transparent rounded-[2.5rem] transform -rotate-2 scale-95 pointer-events-none"></div>
                         
-                        <!-- Up-Scaled Main Frame Grid Container Layout Wrapper -->
-                        <div class="relative bg-white p-3.5 sm:p-4 rounded-[2.5rem] shadow-2xl border border-white/80 transition-all duration-500 hover:rotate-0">
-                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" 
-                                 alt="Dr. Lakshmi's Premium Clinic Workspace Infrastructure Layout" 
-                                 class="rounded-[1.8rem] w-full h-[320px] sm:h-[420px] lg:h-[480px] object-cover object-center shadow-inner">
+                        <!-- Main Frame Container -->
+                        <div class="relative bg-white p-3.5 sm:p-4 rounded-[2.5rem] shadow-2xl border border-white/80">
+                            <img src="assets/lakshmi outer.avif" 
+                                 alt="Dr. Lakshmi's Clinic Infrastructure" 
+                                 class="rounded-[1.8rem] w-full h-[260px] sm:h-[420px] lg:h-[480px] object-cover object-center shadow-inner">
                             
-                            <!-- Dynamic Overlay Floating Micro Widget -->
-                            <div class="absolute bottom-8 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md py-3.5 px-5 rounded-2xl shadow-xl border border-medical-100 max-w-[220px] hidden sm:block transform hover:scale-105 transition-transform">
+                            <!-- Floating Trust Badge -->
+                            <div class="absolute bottom-8 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md py-3.5 px-5 rounded-2xl shadow-xl border border-medical-100 max-w-[220px] hidden sm:block">
                                 <div class="flex items-center gap-1.5 text-amber-500 font-bold text-sm">
                                     <span>⭐⭐⭐⭐⭐</span>
                                 </div>
@@ -358,8 +443,8 @@ tailwind.config = {
 
 <!-- ========================================== -->
         <!-- MEET OUR DOCTORS SECTION (OPTIMIZED VIEW) -->
-        <!-- ========================================== -->
-        <section id="about" class="py-24 sm:py-28 bg-white px-6 sm:px-12 relative overflow-hidden">
+    
+        <section id="about" class="py-8 sm:py-12 bg-white px-6 sm:px-12 relative overflow-hidden">
             <div class="max-w-7xl mx-auto">
                 
                 <!-- Section Header -->
@@ -422,16 +507,16 @@ tailwind.config = {
 
                             <div class="pt-2">
                             <button onclick="openAppointmentModal()"
-class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border border-gold-500 text-white font-bold text-sm px-6 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
-    Schedule Consultation with Dr. Vijayalakshmi
-</button>
+                            class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border border-gold-500 text-white font-bold text-sm px-6 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                            Schedule Consultation with Dr. Vijayalakshmi
+                          </button>
                             </div>
                         </div>
 
                         <!-- Right Image Pillar -->
                         <div class="lg:col-span-5 relative order-1 lg:order-2" data-aos="fade-left">
                             <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 max-w-sm mx-auto lg:max-w-none">
-                                <img src="assets/lakshmi.png" alt="Dr. B.N.R. Vijayalakshmi" class="w-full h-[380px] sm:h-[460px] object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80'">
+                                <img src="assets/Dr lakshmi.png" alt="Dr. B.N.R. Vijayalakshmi" class="w-full h-[380px] sm:h-[460px] object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80'">
                             </div>
                            <!-- Modern Glassmorphism Floating Badge -->
                             <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-6 bg-white/80 backdrop-blur-md rounded-2xl shadow-xl shadow-slate-900/5 border border-white/60 p-4 flex items-center gap-4 w-[220px] transition-all duration-300 hover:-translate-y-1">
@@ -452,426 +537,647 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
                         </div>
                     </div>
 
-                    <!-- DOCTOR 2: IMAGE LEFT, TEXT RIGHT -->
-                    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center pt-12">
-                        <!-- Left Image Pillar -->
-                        <div class="lg:col-span-5 relative" data-aos="fade-right">
-                            <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 max-w-sm mx-auto lg:max-w-none">
-                                <img src="doctor2-image.jpg" alt="Associate Homoeopathic Specialist" class="w-full h-[380px] sm:h-[460px] object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80'">
+
+
+                </div>
+            </div>
+        </section>
+
+<!-- CONDITIONS -->
+<section id="treatments" class="py-20 bg-slate-50 px-4 sm:px-6 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-xs font-bold tracking-widest text-medical-600 uppercase bg-medical-50/80 px-4 py-2 rounded-full border border-medical-100">
+                Conditions We Treat
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-4 tracking-tight">
+                Health Problems We Help With
+            </h2>
+            <p class="text-gray-600 mt-4 text-sm sm:text-base leading-relaxed font-medium">
+                We provide personalized homeopathic care for a wide range of health concerns. Explore our core treatment specializations mapped out through safe, gentle, and individualized constitutional pathways.
+            </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2.5 mb-14">
+            <span class="px-4 py-2 bg-white rounded-xl border border-gray-100 shadow-xs text-xs sm:text-sm font-bold text-gray-700">🌿 Personalized Care</span>
+            <span class="px-4 py-2 bg-white rounded-xl border border-gray-100 shadow-xs text-xs sm:text-sm font-bold text-gray-700">👨‍👩‍👧‍👦 Family Wellness</span>
+            <span class="px-4 py-2 bg-white rounded-xl border border-gray-100 shadow-xs text-xs sm:text-sm font-bold text-gray-700">🏥 Root-Cause Healing</span>
+            <span class="px-4 py-2 bg-white rounded-xl border border-gray-100 shadow-xs text-xs sm:text-sm font-bold text-gray-700">📍 Chennai Based Clinic</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- Card 1: Women's Health & PCOS (Perfectly Balanced Edge-to-Edge Vector Mapping) -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <!-- Height increased to h-48 to maximize canvas visibility -->
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <!-- Changed to object-fill to stretch edge-to-edge and match neighboring card volumes perfectly -->
+                    <img src="assets/womenpcot.png" alt="Women's Health Support Banner" class="w-full h-full object-fill object-center group-hover:scale-102 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Specialty</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Women's Health & PCOS Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Comprehensive constitutional relief for PCOS/PCOD profiles, irregular cycle tracking paths, painful menstruation, ovarian cysts, severe hormonal imbalances, and natural symptom-free menopause management.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('womens-health')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+<!-- Card 2: Children's Health -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="assets/child_care.png" alt="Children's Immunity Care" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Pediatrics</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Children's Health & Immunity</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Gentle, natural sweet-pill therapeutic protocols designed to boost underlying immunity, reduce frequent seasonal coughs/colds, fix digestive weakness, and safely manage pediatric environmental allergies.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('pediatric-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 3: Asthma & Allergy -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Asthma & Allergy Management" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Respiratory</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Asthma & Allergy Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Deep constitutional recovery tracks targeting chronic bronchial asthma, wheezing spells, dust allergies, sinus blocks, chronic sneezing patterns, and seasonal respiratory tract inflammation.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('allergy-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 4: Skin & Hair -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Skin & Hair Therapeutics" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Dermatology</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Skin & Hair Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Help for stubborn acne vulgaris breakouts, raw eczema flakes, scalp dandruff accumulation, severe hair fall cycles, patchy alopecia issues, and general persistent skin allergies.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('skin-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 5: Joint Pain & Arthritis -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80" alt="Joint Pain Therapeutics" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Rheumatology</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Joint Pain & Arthritis Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Personalized remedies targeting knee joint stiffness, degenerative osteoarthritis indicators, rheumatoid arthritis pain swelling, lumbar spondylitis issues, and sciatica nerve shooting lines.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('joint-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 6: Digestive Health -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=600&q=80" alt="Digestive Recovery Systems" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Gastroenterology</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Digestive Health Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Effective management for chronic hyperacidity, severe acid reflux/GERD lines, flatulence, gas pain, bowel bloating spikes, indigestion, and Irritable Bowel Syndrome (IBS) symptoms.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('digestive-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 7: Thyroid & Hormonal Health -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Thyroid Evaluation" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Endocrinology</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Thyroid & Hormonal Health</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Support for thyroid dysfunction including hypothyroidism, fatigue, metabolic slows, sudden weight shifts, mood swings, and general sluggish glandular tracking parameters.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('thyroid-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 8: Stress, Anxiety & Sleep -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" alt="Mental Wellness" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Mental Health</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Stress, Anxiety & Sleep Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Holistic mental wellness care for mild anxiety patterns, workplace panic spikes, chronic stress tracking layers, emotional exhaustions, and irregular insomnia sleep disturbances.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('mental-wellness')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 9: Frequent Cold & Cough -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="Respiratory Care" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Immune Core</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Frequent Cold & Cough Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Support targeting recurring winter colds, persistent throat throat irritations, dry hacking cough lines, congestion blocks, and weak respiratory immune reactions.
+                        </p>
+                    </div>
+                    <button onclick="openTreatmentModal('respiratory-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                </div>
+            </div>
+
+            <!-- Card 10: Immunity Support Care -->
+            <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300 md:col-span-2 lg:col-span-3 lg:max-w-md lg:mx-auto w-full">
+                <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" alt="Immunity Optimization" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Vitality</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
+                    <div>
+                        <h3 class="font-extrabold text-lg text-slate-900 mb-2.5 tracking-tight group-hover:text-medical-600 transition-colors">Immunity Support Care</h3>
+                        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed font-medium">
+                            Comprehensive immune optimization mapping for adults and children who frequently catch infections, have low stamina, or need deep vitality restoration.
+                        </p>
+                    </div>
+                    <div class="px-1 w-full">
+                        <button onclick="openTreatmentModal('immunity-care')" class="mt-5 w-full py-3 rounded-xl bg-slate-50 border border-slate-100 hover:bg-medical-600 hover:text-white transition-all font-bold text-xs sm:text-sm text-slate-700">Learn More & Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16">
+            <div class="bg-white rounded-3xl border border-gray-200/70 p-6 sm:p-10 text-center shadow-xs max-w-4xl mx-auto">
+                <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 mb-3 tracking-tight">Not Sure If We Treat Your Specific Condition?</h3>
+                <p class="text-gray-500 mb-6 font-medium text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
+                    Homeopathy looks at the individual as a whole, not just isolated diagnoses. Contact our clinic desk to review your symptoms and set up an evaluation.
+                </p>
+                <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 rounded-xl bg-medical-600 text-white font-extrabold text-sm hover:bg-medical-700 transition shadow-md shadow-medical-600/10">Book Personalized Consultation</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CORE CLINICAL BENEFITS & TREATMENT APPROACH-->
+        <section id="benefits" class="py-6 bg-white px-4 sm:px-6 select-none border-b border-gray-100">
+            <div class="max-w-7xl mx-auto">
+                
+                <!-- Section Header with Customized Copy Strategy Mapping -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold tracking-widest text-medical-600 uppercase bg-medical-50/80 px-4 py-2 rounded-full border border-medical-100 inline-block">
+                        WHY PATIENTS CHOOSE US
+                    </span>
+                    <h3 class="text-[11px] font-extrabold tracking-widest text-slate-400 uppercase block mt-6 mb-1">
+                        HOMEOPATHIC CARE APPROACH
+                    </h3>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+                        What Makes Our Treatment Different?
+                    </h2>
+                    <p class="text-gray-500 mt-4 text-sm sm:text-base leading-relaxed font-medium max-w-2xl mx-auto">
+                        Personalized care focused on understanding your health concerns and supporting your overall well-being through highly precise, individualized treatment plans.
+                    </p>
+                </div>
+
+                <!-- Main Layout Alignment Grid -->
+                <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center max-w-6xl mx-auto">
+                    
+                    <!-- Left Column Image Area: Perfectly Relevant Natural Homeopathy Theme -->
+                    <div class="lg:col-span-5" data-aos="fade-right">
+                        <div class="rounded-[2rem] overflow-hidden shadow-xl border-4 border-slate-50 relative group bg-slate-50">
+                            <!-- Premium Relevant Image: Natural remedies, amber bottle, and professional clinical setup -->
+                            <img src="assets/homeo1.png" 
+                                 alt="Natural Homeopathic Remedies and Clinical Wellness Setup" 
+                                 class="w-full h-[340px] sm:h-[440px] object-cover transform group-hover:scale-102 transition-transform duration-700">
+                            
+                            <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md py-2.5 px-4 rounded-xl text-[10px] font-bold text-medical-800 border border-medical-200/60 shadow-sm flex items-center gap-1.5">
+                                🌿 100% Safe & Natural Remediation
                             </div>
-                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-6 bg-white rounded-2xl shadow-xl border border-gray-100 p-4 flex items-center gap-4 w-[210px]">
-                                <div class="w-11 h-11 rounded-xl bg-medical-600 text-white flex items-center justify-center text-lg font-bold">🔬</div>
-                                <div>
-                                    <h5 class="text-sm font-extrabold text-slate-900 leading-none">Verified ID</h5>
-                                    <span class="text-[11px] text-gray-500 font-medium block mt-1">Council Certified</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Upgraded Premium Shield Badges Array -->
+                    <div class="lg:col-span-7 space-y-4" data-aos="fade-left">
+                        
+                        <!-- Benefit Card 1: Individualized Treatment -->
+                        <div class="flex gap-4 sm:gap-5 p-5 sm:p-6 bg-slate-50/80 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-md group">
+                            <!-- Upgraded Modern Emerald Shield Badge -->
+                            <div class="flex-shrink-0 w-12 h-12 bg-emerald-50 border border-emerald-100/60 rounded-xl flex items-center justify-center text-xl shadow-2xs group-hover:bg-medical-600 group-hover:text-white group-hover:border-medical-600 transition-all duration-300">
+                                <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div class="space-y-1 min-w-0">
+                                <span class="text-[9px] font-bold tracking-widest text-medical-600 uppercase block leading-none mb-1">PERSONALIZED CARE</span>
+                                <h4 class="font-black text-slate-900 text-sm sm:text-base tracking-tight">
+                                    Individualized Treatment
+                                </h4>
+                                <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-medium pt-0.5">
+                                    Every patient is different. Treatment plans are custom-tailored down to the exact remedy dilution scale based on your unique combination of symptoms, lifestyle factors, and specific health concerns.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Benefit Card 2: Whole-Person Wellness -->
+                        <div class="flex gap-4 sm:gap-5 p-5 sm:p-6 bg-slate-50/80 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-md group">
+                            <!-- Upgraded Modern Emerald Shield Badge -->
+                            <div class="flex-shrink-0 w-12 h-12 bg-emerald-50 border border-emerald-100/60 rounded-xl flex items-center justify-center text-xl shadow-2xs group-hover:bg-medical-600 group-hover:text-white group-hover:border-medical-600 transition-all duration-300">
+                                <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                            <div class="space-y-1 min-w-0">
+                                <span class="text-[9px] font-bold tracking-widest text-medical-600 uppercase block leading-none mb-1">HOLISTIC APPROACH</span>
+                                <h4 class="font-black text-slate-900 text-sm sm:text-base tracking-tight">
+                                    Whole-Person Wellness
+                                </h4>
+                                <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-medium pt-0.5">
+                                    We focus on understanding the complete diagnostic picture. Rather than looking at a single surface symptom alone, we evaluate your emotional stress variables, past medical history loops, and constitutional stamina matrices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Benefit Card 3: Ongoing Health Support -->
+                        <div class="flex gap-4 sm:gap-5 p-5 sm:p-6 bg-slate-50/80 rounded-2xl border border-slate-100 transition-all hover:bg-white hover:shadow-md group">
+                            <!-- Upgraded Modern Emerald Shield Badge -->
+                            <div class="flex-shrink-0 w-12 h-12 bg-emerald-50 border border-emerald-100/60 rounded-xl flex items-center justify-center text-xl shadow-2xs group-hover:bg-medical-600 group-hover:text-white group-hover:border-medical-600 transition-all duration-300">
+                                <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="space-y-1 min-w-0">
+                                <span class="text-[9px] font-bold tracking-widest text-medical-600 uppercase block leading-none mb-1">LONG-TERM WELLNESS</span>
+                                <h4 class="font-black text-slate-900 text-sm sm:text-base tracking-tight">
+                                    Ongoing Health Support
+                                </h4>
+                                <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-medium pt-0.5">
+                                    Your long-term healing trajectory stays on track through proactive clinical follow-ups. Regular assessment trackers allow us to adjust remedies dynamically as your body clears acute and chronic pathology layers.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<!-- TESTIMONIAL-->
+<section id="testimonials" class="py-24 bg-slate-50 px-4 sm:px-6 border-b border-gray-200 select-none">
+            <div class="max-w-7xl mx-auto">
+                
+                <!-- Section Header with Statistics Dashboard -->
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-8">
+                    <div class="space-y-3 text-center lg:text-left max-w-2xl">
+                        <span class="text-xs font-bold tracking-widest text-medical-600 uppercase bg-medical-50 border border-medical-100 px-3.5 py-1.5 rounded-full inline-block">
+                            Patient Satisfaction Metrics
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mt-2">
+                            Real Stories of Recovery
+                        </h2>
+                        <p class="text-gray-500 text-sm sm:text-base font-medium leading-relaxed">
+                            Read genuine experiences from patients who achieved long-term, root-cause healing through our personalized homeopathic care mapping.
+                        </p>
+                    </div>
+                    
+                    <!-- Premium Clinical Rating Badge Box -->
+                    <div class="flex items-center gap-4 bg-white px-6 py-5 rounded-3xl border border-gray-200/70 shadow-sm flex-shrink-0 self-center lg:self-auto min-w-[280px]">
+                    <div class="w-12 h-12 bg-slate-50 rounded-2xl border border-gray-100 flex items-center justify-center shadow-inner flex-shrink-0">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22c-.23-.67-.35-1.37-.35-2.09z"/>
+                                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z"/>
+                            </svg>
+                        </div>
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl font-black text-slate-900 tracking-tight">4.8</span>
+                                <div class="text-amber-400 text-sm tracking-tight flex gap-0.5">★★★★★</div>
+                            </div>
+                            <span class="text-[10px] font-extrabold text-slate-400 block mt-1 uppercase tracking-widest">Google Verified Business Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BENTO COLUMN GRID: 6 CARDS PERFECTLY BALANCED (2 PER COLUMN) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                    
+                    <!-- COLUMN 1: General Consultations & Care Patterns -->
+                    <div class="space-y-6">
+                        
+                        <!-- Testimonial Card 1 -->
+                        <div onclick="openReviewPopup('Sowmya Srinivasan', 'General Family Wellness', 'Highly professional clinic. Dr. Vijayalakshmi listens to your complex chronic history with extreme patience and details everything wonderfully before mapping out customized constitutional dilutions. The clinic environment is exceptionally clean and well-structured.')" 
+                             class="bg-white p-6 sm:p-7 rounded-3xl border border-gray-200/60 hover:border-medical-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-400 text-xs gap-0.5">★★★★★</div>
+                                <span class="text-[9px] font-bold bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Patient Care</span>
+                            </div>
+                            <h4 class="font-extrabold text-base text-slate-900 tracking-tight group-hover:text-medical-600 transition-colors">Highly Professional Family Care</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2.5 italic font-medium">
+                                "Highly professional clinic. Dr. Vijayalakshmi listens to your complex chronic history with extreme patience and details everything wonderfully before mapping out customized constitutional dilutions..."
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-medical-600 font-extrabold text-[11px] text-white flex items-center justify-center">S.S</div>
+                                <div class="min-w-0">
+                                    <h5 class="text-xs font-bold text-slate-900 truncate">Sowmya Srinivasan</h5>
+                                    <span class="text-[9px] font-bold text-slate-400 block mt-0.5 uppercase tracking-wider">Google Verified Patient</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Right Data Pillar -->
-                        <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
-                            <div class="space-y-2">
-                                <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Associate Specialist</h3>
-                                <p class="text-sm sm:text-base font-semibold text-medical-600">Chronic Care & Metabolic Pathologies Expert</p>
+                        <!-- Testimonial Card 2: Added 6th Review (PCOS & Endocrine Core) -->
+                        <div onclick="openReviewPopup('Divya Bharathi', 'Women\'s Health & PCOS', 'I consulted here for irregular cycles and PCOS problems. Dr. Lakshmi carefully analyzed my system from the root cause. Within a few months of taking the gentle homeopathic drops, my reports showed huge structural health adjustments. The consultation was very comforting and completely genuine.')" 
+                             class="bg-white p-6 sm:p-7 rounded-3xl border border-gray-200/60 hover:border-medical-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-400 text-xs gap-0.5">★★★★★</div>
+                                <span class="text-[9px] font-bold bg-pink-50 text-pink-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Women's Health</span>
                             </div>
-
-                            <div class="flex flex-wrap gap-2.5">
-                                <span class="bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-sm">Specialist in Constitutional Prescriptions</span>
-                                <span class="bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-sm">Advanced Clinical Nutrition Practitioner</span>
-                            </div>
-
-                            <div class="bg-slate-50 border border-gray-100 rounded-2xl p-6 text-sm sm:text-base text-gray-700 leading-relaxed shadow-sm">
-                                Focusing heavily on complex systemic pathologies, our associate faculty coordinates specialized homeopathic remedy grids with structural nutritional changes. Their medical approach targets chronic respiratory issues, persistent dermatology sensitivities, and metabolic functional slowdowns.
-                            </div>
-
-                            <div class="space-y-3">
-                                <h4 class="text-sm font-bold uppercase tracking-wider text-slate-800 flex items-center gap-2">
-                                    🎓 Education & Training:
-                                </h4>
-                                <ul class="space-y-2.5 text-sm sm:text-base text-gray-600 font-medium">
-                                    <li class="flex items-start gap-2.5">
-                                        <span class="text-medical-500 font-bold text-base">✓</span>
-                                        <span>Bachelor of Homoeopathic Medicine & Surgery (B.H.M.S.)</span>
-                                    </li>
-                                    <li class="flex items-start gap-2.5">
-                                        <span class="text-medical-500 font-bold text-base">✓</span>
-                                        <span>Fellowship in Advanced Constitutional Diagnostics & Case Customization</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="pt-2">
-                                <button onclick="openAppointmentModal()" class="w-full sm:w-auto bg-medical-600 hover:bg-medical-700 text-white font-bold text-sm px-6 py-4 rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                                    Book Case Review Slot
-                                </button>
+                            <h4 class="font-extrabold text-base text-slate-900 tracking-tight group-hover:text-medical-600 transition-colors">Effective PCOS Resolution Method</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2.5 italic font-medium">
+                                "I consulted here for irregular cycles and PCOS problems. Dr. Lakshmi carefully analyzed my system from the root cause. Within a few months of taking the gentle homeopathic drops, my reports showed huge structural adjustments..."
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-medical-600 font-extrabold text-[11px] text-white flex items-center justify-center">D.B</div>
+                                <div class="min-w-0">
+                                    <h5 class="text-xs font-bold text-slate-900 truncate">Divya Bharathi</h5>
+                                    <span class="text-[9px] font-bold text-slate-400 block mt-0.5 uppercase tracking-wider">Google Verified Patient</span>
+                                </div>
                             </div>
                         </div>
+
+                    </div>
+
+                    <!-- COLUMN 2: Deep Chronic Paths & Safety Systems -->
+                    <div class="space-y-6">
+                        
+                        <!-- Testimonial Card 3 -->
+                        <div onclick="openReviewPopup('Ramesh Krishnan', 'Chronic Care Tracking', 'Excellent treatment layout for deep-rooted chronic conditions. I had tried multiple treatment setups across Chennai with zero permanent recovery results. Homeopathy here systematically brought down my long-term problem parameters safely over a 4-month timeline.')" 
+                             class="bg-white p-6 sm:p-7 rounded-3xl border border-gray-200/60 hover:border-medical-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-400 text-xs gap-0.5">★★★★★</div>
+                                <span class="text-[9px] font-bold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Chronic Care</span>
+                            </div>
+                            <h4 class="font-extrabold text-base text-slate-900 tracking-tight group-hover:text-medical-600 transition-colors">Root-Cause Chronic Recovery</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2.5 italic font-medium">
+                                "Excellent treatment layout for deep-rooted chronic conditions. I had tried multiple treatment setups across Chennai with zero permanent recovery results. Homeopathy here systematically brought down my parameters..."
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-medical-600 font-extrabold text-[11px] text-white flex items-center justify-center">R.K</div>
+                                <div class="min-w-0">
+                                    <h5 class="text-xs font-bold text-slate-900 truncate">Ramesh Krishnan</h5>
+                                    <span class="text-[9px] font-bold text-slate-400 block mt-0.5 uppercase tracking-wider">Verified Business Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 4 -->
+                        <div onclick="openReviewPopup('Meera Parthasarathy', 'Safe Holistic Wellness', 'The medicines are 100% safe, incredibly easy to administer, and completely free of toxic side effects. Perfect clinical infrastructure for long-term health restoration for both elderly family members and small infants.')" 
+                             class="bg-white p-6 sm:p-7 rounded-3xl border border-gray-200/60 hover:border-medical-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-400 text-xs gap-0.5">★★★★★</div>
+                                <span class="text-[9px] font-bold bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Safety Focus</span>
+                            </div>
+                            <h4 class="font-extrabold text-base text-slate-900 tracking-tight group-hover:text-medical-600 transition-colors">100% Safe Treatment Structure</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2.5 italic font-medium">
+                                "The medicines are 100% safe, incredibly easy to administer, and completely free of toxic side effects. Perfect clinical infrastructure for long-term health restoration for family members..."
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-medical-600 font-extrabold text-[11px] text-white flex items-center justify-center">M.P</div>
+                                <div class="min-w-0">
+                                    <h5 class="text-xs font-bold text-slate-900 truncate">Meera Parthasarathy</h5>
+                                    <span class="text-[9px] font-bold text-slate-400 block mt-0.5 uppercase tracking-wider">Verified Profile Account</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- COLUMN 3: Pediatric Immunity & Dermatology Fields -->
+                    <div class="space-y-6">
+                        
+                        <!-- Testimonial Card 5 -->
+                        <div onclick="openReviewPopup('Deepika Rajan', 'Children\'s Immunity Care', 'Extremely satisfied with the pediatric constitutional drop remedies. My daughter used to fall sick constantly with severe chest cold congestion with every minor weather block transition. Her baseline immunity is significantly stronger now.')" 
+                             class="bg-white p-6 sm:p-7 rounded-3xl border border-gray-200/60 hover:border-medical-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-400 text-xs gap-0.5">★★★★★</div>
+                                <span class="text-[9px] font-bold bg-amber-50 text-amber-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Pediatric Immune</span>
+                            </div>
+                            <h4 class="font-extrabold text-base text-slate-900 tracking-tight group-hover:text-medical-600 transition-colors">Amazing Pediatric Shield Outcomes</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2.5 italic font-medium">
+                                "Extremely satisfied with the pediatric constitutional drop remedies. My daughter used to fall sick constantly with severe chest cold congestion with every single weather block transition..."
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-medical-600 font-extrabold text-[11px] text-white flex items-center justify-center">D.R</div>
+                                <div class="min-w-0">
+                                    <h5 class="text-xs font-bold text-slate-900 truncate">Deepika Rajan</h5>
+                                    <span class="text-[9px] font-bold text-slate-400 block mt-0.5 uppercase tracking-wider">Parent Profile Tracker</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 6 -->
+                        <div onclick="openReviewPopup('Arun Kumar V', 'Advanced Skin Pathology', 'Dr. Lakshmi\'s clinic provides an incredible medical approach for stubborn skin diseases. My allergic dermatitis patches on my hands and neck started drying up and clearing smoothly within 3 weeks of starting the natural remedies.')" 
+                             class="bg-white p-6 sm:p-7 rounded-3xl border border-gray-200/60 hover:border-medical-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-400 text-xs gap-0.5">★★★★★</div>
+                                <span class="text-[9px] font-bold bg-rose-50 text-rose-700 px-2.5 py-1 rounded-md uppercase tracking-wider">Dermatology</span>
+                            </div>
+                            <h4 class="font-extrabold text-base text-slate-900 tracking-tight group-hover:text-medical-600 transition-colors">Dermatitis Skin Recovery Track</h4>
+                            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed mt-2.5 italic font-medium">
+                                "Dr. Lakshmi's clinic provides an incredible medical approach for stubborn skin diseases. My allergic dermatitis patches on my hands and neck started drying up and clearing smoothly within 3 weeks..."
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-medical-600 font-extrabold text-[11px] text-white flex items-center justify-center">A.K</div>
+                                <div class="min-w-0">
+                                    <h5 class="text-xs font-bold text-slate-900 truncate">Arun Kumar V</h5>
+                                    <span class="text-[9px] font-bold text-slate-400 block mt-0.5 uppercase tracking-wider">Dermatology Patient</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <section id="treatments" class="py-24 bg-slate-50 px-4 sm:px-6 border-t border-gray-100">
+
+
+        <!-- FAQ's-->
+<!-- ========================================== -->
+        <!-- PREMIUM TWO-COLUMN SPLIT ACCORDION DASHBOARD-->
+        <!-- ========================================== -->
+        <section id="faqs" class="py-24 bg-slate-50 px-4 sm:px-6 border-b border-gray-100 select-none">
             <div class="max-w-7xl mx-auto">
+                
+                <!-- Section Header Section Layout -->
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">Therapeutic Offerings</span>
-                    <h2 class="text-3xl font-bold text-gray-900 mt-2">Comprehensive Clinical Solutions</h2>
-                    <p class="text-gray-500 mt-3 text-sm sm:text-base">Targeted constitutional protocols designed to address deep-seated pathological triggers.</p>
+                    <span class="text-xs font-bold tracking-widest text-medical-600 uppercase bg-medical-50 border border-medical-100 px-3.5 py-1.5 rounded-full inline-block">
+                        Information Center
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mt-4">
+                        Common Patient Questions
+                    </h2>
+                    <p class="text-gray-500 mt-3 text-sm sm:text-base font-medium">
+                        Upfront, transparent guidelines regarding treatment dynamics and clinical rules.
+                    </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between group">
-                        <div>
-                            <div class="h-44 overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Women's Wellness Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-5 space-y-2">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900">Women's Wellness & Hormonal Axis</h3>
-                                <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                                    Comprehensive support structures built to resolve underlying ovarian, uterine, and endocrine axis issues safely. Mapped closely for PCOS/PCOD profiles, severe cycle irregularities, and menopausal updates.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <button onclick="openTreatmentModal('womens-wellness')" class="w-full py-2.5 bg-slate-50 text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-medical-600 hover:text-white transition-colors">
-                                Read More Detail
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between group">
-                        <div>
-                            <div class="h-44 overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80" alt="Pediatric Healthcare Treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-5 space-y-2">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900">Pediatric Care & Natural Immunity</h3>
-                                <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                                    Gentle pill-based formulations optimized to reinforce natural defense mechanism frameworks in children. Resolves chronic tonsillitis trends, wheezing, and digestive distress.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <button onclick="openTreatmentModal('pediatric-care')" class="w-full py-2.5 bg-slate-50 text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-medical-600 hover:text-white transition-colors">
-                                Read More Detail
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between group">
-                        <div>
-                            <div class="h-44 overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80" alt="Allergy and Respiratory Desensitization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-5 space-y-2">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900">Allergy & Respiratory Desensitization</h3>
-                                <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                                    Deep desensitization tracks configured to lower mucous membrane hypersensitivity triggers against perennial dust mites, weather drops, and pollen strains.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <button onclick="openTreatmentModal('allergy-care')" class="w-full py-2.5 bg-slate-50 text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-medical-600 hover:text-white transition-colors">
-                                Read More Detail
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between group">
-                        <div>
-                            <div class="h-44 overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" alt="Dermatology Skin Solutions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-6 space-y-2">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900">Advanced Skin & Hair Pathology Care</h3>
-                                <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                                    Constitutional strategies aiming to cool dermal inflammation loops from within. Addresses persistent atopic dermatitis, eczema flare-ups, and pattern hair loss.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <button onclick="openTreatmentModal('skin-care')" class="w-full py-2.5 bg-slate-50 text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-medical-600 hover:text-white transition-colors">
-                                Read More Detail
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between group">
-                        <div>
-                            <div class="h-44 overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80" alt="Joint Musculoskeletal Management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-6 space-y-2">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900">Joint, Musculoskeletal & Arthritis Care</h3>
-                                <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                                    Natural anti-inflammatory options structured to alleviate joint rigidity profiles, chronic backache spasms, and elevated uric acid states without causing stomach irritation.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <button onclick="openTreatmentModal('joint-care')" class="w-full py-2.5 bg-slate-50 text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-medical-600 hover:text-white transition-colors">
-                                Read More Detail
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between group">
-                        <div>
-                            <div class="h-44 overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" alt="Gastrointestinal Gut Balance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="p-6 space-y-2">
-                                <h3 class="text-base sm:text-lg font-bold text-slate-900">Digestive & Gastrointestinal Balance</h3>
-                                <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
-                                    Rebalances gastric motility parameters, resolving flatulence metrics, chronic hyperacidity reflux cycles, and functional bowel disruptions (IBS).
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <button onclick="openTreatmentModal('digestive-care')" class="w-full py-2.5 bg-slate-50 text-slate-800 font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-medical-600 hover:text-white transition-colors">
-                                Read More Detail
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="benefits" class="py-24 bg-white px-4 sm:px-6">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center max-w-2xl mx-auto mb-20">
-                    <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">Clinical Principles</span>
-                    <h2 class="text-3xl font-bold text-gray-900 mt-2">Core Medical Benefits</h2>
-                    <p class="text-gray-500 mt-3 text-sm sm:text-base">A precise, professional breakdown of how individualized constitutional medicine triggers safe structural health recovery.</p>
-                </div>
-
-                <div class="grid lg:grid-cols-12 gap-12 items-center max-w-6xl mx-auto">
-                    <div class="lg:col-span-5" data-aos="fade-right">
-                        <div class="rounded-3xl overflow-hidden shadow-md border border-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Clinical Diagnosis Analysis" class="w-full h-[320px] sm:h-[420px] object-cover">
-                            <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md py-2 px-4 rounded-xl text-[11px] font-bold text-medical-800 border border-medical-200">
-                                🔬 Scientific Alignment Map
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lg:col-span-7 space-y-5" data-aos="fade-left">
-                        <div class="flex gap-4 sm:gap-5 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-gray-100 transition-all hover:bg-white hover:shadow-sm">
-                            <div class="flex-shrink-0 w-11 h-11 bg-white rounded-xl border border-medical-200 flex items-center justify-center text-medical-600">
-                                <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                                </svg>
-                            </div>
-                            <div class="space-y-1">
-                                <h4 class="font-bold text-slate-900 text-sm sm:text-base flex flex-wrap items-center gap-2">
-                                    Zero Toxic Burden <span class="bg-medical-100 text-medical-800 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Biocompatible</span>
-                                </h4>
-                                <p class="text-xs text-gray-500 leading-relaxed">Highly potentized natural remedies that work on nano-dosage principles. They cause zero toxic accumulation, chemical side effects, or structural organ stress, making them ideal for infants and prenatal care.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4 sm:gap-5 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-gray-100 transition-all hover:bg-white hover:shadow-sm">
-                            <div class="flex-shrink-0 w-11 h-11 bg-white rounded-xl border border-medical-200 flex items-center justify-center text-medical-600">
-                                <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                                </svg>
-                            </div>
-                            <div class="space-y-1">
-                                <h4 class="font-bold text-slate-900 text-sm sm:text-base flex flex-wrap items-center gap-2">
-                                    Constitutional Analysis Maps <span class="bg-medical-100 text-medical-800 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Personalized</span>
-                                </h4>
-                                <p class="text-xs text-gray-500 leading-relaxed">Remedies are not loosely prescribed by standard disease names. Instead, each plan is custom-built around your unique physical built-up tendencies, inherited traits, and emotional stress vectors.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4 sm:gap-5 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-gray-100 transition-all hover:bg-white hover:shadow-sm">
-                            <div class="flex-shrink-0 w-11 h-11 bg-white rounded-xl border border-medical-200 flex items-center justify-center text-medical-600">
-                                <svg class="w-5 h-5 stroke-current fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                                </svg>
-                            </div>
-                            <div class="space-y-1">
-                                <h4 class="font-bold text-slate-900 text-sm sm:text-base flex flex-wrap items-center gap-2">
-                                    Root-Cause Resolution <span class="bg-medical-100 text-medical-800 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">Curative</span>
-                                </h4>
-                                <p class="text-xs text-gray-500 leading-relaxed">Aims to resolve underlying functional disruptions instead of simply blocking local symptoms temporarily. This inside-out stabilization helps the body maintain long-term recovery and prevents conditions from recurring.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="py-24 bg-slate-50 overflow-hidden px-4 sm:px-6 border-b border-gray-200">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-                    <div class="space-y-3">
-                        <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">Verified Patient Outcomes</span>
-                        <h2 class="text-3xl font-bold text-gray-900 mt-1">Real Stories of Recovery</h2>
-                    </div>
+                <!-- TWO-COLUMN RESPONSIVE LAYOUT MATRIX GRID (Prevents scrolling fatigue) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 items-start" id="accordionContainer">
                     
-                    <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-2xl border border-gray-200 shadow-sm flex-shrink-0 self-start md:self-auto">
-                        <div class="w-10 h-10 bg-slate-50 rounded-xl border border-gray-100 flex items-center justify-center font-black text-xl text-blue-600">
-                            G
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-2xl font-extrabold text-slate-900 tracking-tight">4.4</span>
-                                <div class="text-amber-400 text-sm">★★★★★</div>
-                            </div>
-                            <span class="text-[11px] font-bold text-gray-400 block mt-0.5 uppercase tracking-wider">Based on 14 reviews</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-slider" id="dragSlider">
-                    <div onclick="openReviewPopup('Ananya Sharma', 'PCOS & Skin Resolution', 'I spent years struggling with severe cyclic acne and irregular cycles. Conventional hormonal treatments offered only temporary relief. Dr. Lakshmi took the time to map out my entire stress profile and history. Within six months of consistent treatment, my ultrasound scans returned to completely normal metrics and my skin cleared beautifully. True root-cause healing.')" class="testimonial-card bg-white p-6 rounded-2xl border border-gray-200 hover:border-medical-400 hover:shadow-md transition-all select-none">
-                        <div class="flex text-amber-400 text-xs gap-0.5 mb-3">★★★★★</div>
-                        <h4 class="font-bold text-sm text-medical-700">PCOS & Skin Resolution Success</h4>
-                        <p class="text-xs text-gray-600 line-clamp-4 leading-relaxed mt-2 italic">
-                            "I spent years struggling with severe cyclic acne and irregular cycles. Conventional hormonal treatments offered only temporary relief. Dr. Lakshmi took the time to map out my entire stress profile..."
-                        </p>
-                        <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-medical-600 font-bold text-xs text-white flex items-center justify-center">A.S</div>
-                            <div>
-                                <h5 class="text-xs font-bold text-gray-900">Ananya Sharma</h5>
-                                <span class="text-[10px] text-gray-400 block">Verified Patient Account</span>
+                    <!-- LEFT SIDE ACCORDION COLUMN -->
+                    <div class="space-y-4">
+                        
+                        <!-- Question 1: Conditions Treated -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">What health conditions do you commonly treat?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    We commonly provide personalized homeopathic care for skin allergies, eczema, acne, hair fall, dandruff, thyroid disorders, PCOS, menstrual concerns, asthma, respiratory allergies, digestive problems, chronic joint pain, stress, sleep issues, low immunity, and children's recurring health concerns.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div onclick="openReviewPopup('Rajesh Kumar', 'Pediatric Asthma Care', 'My young son caught persistent chest colds and wheezing flare-ups with every minor weather change. Homeopathy treatment here built up his baseline immune system wonderfully. He hasn’t missed a single school day this term and no longer requires heavy nebulizer setups.')" class="testimonial-card bg-white p-6 rounded-2xl border border-gray-200 hover:border-medical-400 hover:shadow-md transition-all select-none">
-                        <div class="flex text-amber-400 text-xs gap-0.5 mb-3">★★★★★</div>
-                        <h4 class="font-bold text-sm text-medical-700">Pediatric Immunity Shield</h4>
-                        <p class="text-xs text-gray-600 line-clamp-4 leading-relaxed mt-2 italic">
-                            "My young son caught persistent chest colds and wheezing flare-ups with every minor weather change. Homeopathy treatment here built up his baseline immune system wonderfully..."
-                        </p>
-                        <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-medical-600 font-bold text-xs text-white flex items-center justify-center">R.K</div>
-                            <div>
-                                <h5 class="text-xs font-bold text-gray-900">Rajesh Kumar</h5>
-                                <span class="text-[10px] text-gray-400 block">Parent Profile Tracker</span>
+                        <!-- Question 2: Medication Interactions -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">Can homeopathic medicines be taken with diabetes or BP medicines?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    Yes, absolutely. Patients should always inform the doctor about any regular medications they are currently taking. During your comprehensive consultation, appropriate individual guidance will be provided regarding your holistic treatment layout and safely co-managing ongoing medical care.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div onclick="openReviewPopup('Meera Deshmukh', 'Chronic Gastro Treatment', 'Continuous hyperacidity and stomach pain made it difficult to manage busy work travel schedules. The tailored digestive constitutional drops healed my stomach lining safely. I can now manage regular work hours completely free of daily antacid reliance.')" class="testimonial-card bg-white p-6 rounded-2xl border border-gray-200 hover:border-medical-400 hover:shadow-md transition-all select-none">
-                        <div class="flex text-amber-400 text-xs gap-0.5 mb-3">★★★★★</div>
-                        <h4 class="font-bold text-sm text-medical-700">Chronic Acid Reflux Resolved</h4>
-                        <p class="text-xs text-gray-600 line-clamp-4 leading-relaxed mt-2 italic">
-                            "Continuous hyperacidity and stomach pain made it difficult to manage busy work travel schedules. The tailored digestive constitutional drops healed my stomach lining safely..."
-                        </p>
-                        <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-medical-600 font-bold text-xs text-white flex items-center justify-center">M.D</div>
-                            <div>
-                                <h5 class="text-xs font-bold text-gray-900">Meera Deshmukh</h5>
-                                <span class="text-[10px] text-gray-400 block">Corporate Lead Executive</span>
+                        <!-- Question 3: Pediatric Safety -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">Is homeopathic treatment suitable for young children?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    Yes. Many parents seek non-toxic homeopathic care for common childhood concerns such as frequent cold congestion, chronic coughs, environmental allergies, weak digestive systems, and low baseline immunity. Treatment recommendations are sweet, non-invasive, and personalized based on the child's profile.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div onclick="openReviewPopup('Sanjay Verma', 'Migraine Care Protocol', 'Severe debilitating migraines kept me trapped in dark rooms multiple days every single month. The constitutional treatment maps selected by Dr. Lakshmi systematically spaced out the attacks until they stopped completely over a 4-month cycle.')" class="testimonial-card bg-white p-6 rounded-2xl border border-gray-200 hover:border-medical-400 hover:shadow-md transition-all select-none">
-                        <div class="flex text-amber-400 text-xs gap-0.5 mb-3">★★★★★</div>
-                        <h4 class="font-bold text-sm text-medical-700">Chronic Migraines Terminated</h4>
-                        <p class="text-xs text-gray-600 line-clamp-4 leading-relaxed mt-2 italic">
-                            "Severe debilitating migraines kept me trapped in dark rooms multiple days every single month. The constitutional treatment maps selected by Dr. Lakshmi systematically spaced out..."
-                        </p>
-                        <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-medical-600 font-bold text-xs text-white flex items-center justify-center">S.V</div>
-                            <div>
-                                <h5 class="text-xs font-bold text-gray-900">Sanjay Verma</h5>
-                                <span class="text-[10px] text-gray-400 block">Verified Patient Account</span>
+                        <!-- Question 4: PCOS & Women's Health -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">Do you provide treatment for PCOS and women's concerns?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    We specialize in providing constitutional care for women experiencing PCOS/PCOD profiles, irregular cycles, hormonal imbalances, painful menstrual periods, and thyroid regulation concerns. Treatment plans are tailored closely to adjust to each individual's systemic health needs.
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <div onclick="openReviewPopup('Karan Malhotra', 'Allergic Dermatitis Support', 'Stubborn eczema patches on my hands and neck caused intense itching and bleeding cycles during winter. Topical steroid creams offered only fleeting relief. The internal homeopathic drops targeted my underlying immune sensitivity, restoring normal skin texture beautifully.')" class="testimonial-card bg-white p-6 rounded-2xl border border-gray-200 hover:border-medical-400 hover:shadow-md transition-all select-none">
-                        <div class="flex text-amber-400 text-xs gap-0.5 mb-3">★★★★★</div>
-                        <h4 class="font-bold text-sm text-medical-700">Atopic Eczema Alleviation</h4>
-                        <p class="text-xs text-gray-600 line-clamp-4 leading-relaxed mt-2 italic">
-                            "Stubborn eczema patches on my hands and neck caused intense itching and bleeding cycles during winter. Topical steroid creams offered only fleeting relief. The internal homeopathic..."
-                        </p>
-                        <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-medical-600 font-bold text-xs text-white flex items-center justify-center">K.M</div>
-                            <div>
-                                <h5 class="text-xs font-bold text-gray-900">Karan Malhotra</h5>
-                                <span class="text-[10px] text-gray-400 block">Verified Skin Care Patient</span>
+                    <!-- RIGHT SIDE ACCORDION COLUMN -->
+                    <div class="space-y-4">
+                        
+                        <!-- Question 5: Hair & Skin Details -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">Can homeopathy help with hair fall and chronic skin problems?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    Patients frequently consult us for targeted concerns such as severe hair fall, dandruff scaling, acne vulgaris, eczema breakouts, localized skin itching, and tracking down skin allergies. The doctor evaluates the underlying systemic causes to recommend a safe treatment approach.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="faqs" class="py-24 bg-slate-50 px-4 sm:px-6">
-            <div class="max-w-3xl mx-auto">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">Information Center</span>
-                    <h2 class="text-3xl font-bold text-gray-900 mt-2">Common Patient Questions</h2>
-                    <p class="text-gray-500 mt-3 text-sm sm:text-base">Upfront, transparent guidelines regarding treatment dynamics and clinical rules.</p>
-                </div>
-
-                <div class="space-y-4" id="accordionContainer">
-                    <div class="faq-card bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden transition-all">
-                        <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none">
-                            <span>How does constitutional homoeopathic treatment differ from standard medicine?</span>
-                            <span class="arrow-icon text-xs text-medical-600">▼</span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50 mt-2">
-                                Standard medicine often targets isolated local expressions of an illness. Constitutional homeopathy analyzes your comprehensive biological profile—including lifestyle habits, inherited tendencies, and mental stress factors—to select a single personalized remedy that restores overall balance from within.
+                        <!-- Question 6: Online Telehealth Framework -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">Do you offer online or remote phone consultations?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    Yes. We provide remote consultations through phone or digital audio appointments, making it highly convenient for long-distance patients living outside Chennai, or those unable to visit our clinical layout framework in person. Remedies are dispatched safely via courier setup.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="faq-card bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden transition-all">
-                        <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none">
-                            <span>Is it true that homoeopathy acts very slowly on chronic ailments?</span>
-                            <span class="arrow-icon text-xs text-medical-600">▼</span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50 mt-2">
-                                Not necessarily. The speed of recovery depends on how long the disease has been developing. While chronic structural imbalances like long-standing skin issues or deep hormonal shifts take time to heal permanently, acute conditions like digestive distress or acute allergic attacks respond very quickly to precise prescribing.
+                        <!-- Question 7: Consultation Timelines -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">How many follow-up consultations will I need?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    The timeline and number of consultations depend completely on the severity of your condition, past health history cycles, and lifestyle tracking adjustments. The expected follow-up schedule parameters will be fully discussed with you by the doctor during your initial screening slot.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="faq-card bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden transition-all">
-                        <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none">
-                            <span>What are the strict dietary restrictions to maintain during treatment?</span>
-                            <span class="arrow-icon text-xs text-medical-600">▼</span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50 mt-2">
-                                We simply advise leaving a clean 15-minute window before and after taking your doses, keeping your mouth free of strong flavors. It is best to avoid consuming items with very strong aromatic elements like raw onions, garlic, or camphor right around your dose time, as intense aromatics can sometimes interfere with remedy action.
+                        <!-- Question 8: Booking Procedures -->
+                        <div class="faq-card bg-white rounded-2xl border border-gray-200/70 shadow-2xs overflow-hidden transition-all duration-300">
+                            <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none group">
+                                <span class="group-hover:text-medical-600 transition-colors pr-4">How can I book a prioritized consultation appointment?</span>
+                                <span class="arrow-icon text-base font-black text-slate-400 group-hover:text-medical-600 transition-colors flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-content">
+                                <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-slate-50 mt-1 font-medium">
+                                    You can instantly book an appointment by calling our clinic desk directly, sending a WhatsApp message via our top-row shortcuts, or submitting your secure primary request parameters using the appointment booking form available on this web platform.
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <div class="faq-card bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden transition-all">
-                        <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none">
-                            <span>Can your remedies be taken safely along with my daily diabetes/BP drugs?</span>
-                            <span class="arrow-icon text-xs text-medical-600">▼</span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50 mt-2">
-                                Yes, absolutely. Our remedies are highly diluted natural formulations that operate on a different physiological pathway than conventional chemical drugs. They do not cause drug interactions, allowing you to safely continue your daily routine prescriptions alongside our care.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-card bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden transition-all">
-                        <button onclick="toggleFaqCard(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 text-sm sm:text-base focus:outline-none">
-                            <span>How do I process long-term medicine refills if I live outside Chennai?</span>
-                            <span class="arrow-icon text-xs text-medical-600">▼</span>
-                        </button>
-                        <div class="faq-content">
-                            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 leading-relaxed border-t border-gray-50 mt-2">
-                                We offer a seamless telehealth framework for long-distance patients. You can complete follow-up reviews over phone or video consultation slots. Your custom remedy refills are then prepared safely and dispatched straight to your home address via courier services.
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -892,34 +1198,34 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
                     
                     <div class="lg:col-span-6 bg-white p-5 sm:p-10 rounded-[2rem] border border-gray-200 shadow-sm flex flex-col justify-between" data-aos="fade-right">
                         <div>
-                            <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">Direct Access Desk</span>
-                            <h3 class="text-2xl font-bold text-slate-900 mt-1 mb-2">Book Your Consultation</h3>
-                            <p class="text-xs text-gray-500 mb-6">Submitting this form triggers our administrative system, routing your message directly to our care team's inbox for quick verification mapping.</p>
+                            <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">BOOK AN APPOINTMENT</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mt-1 mb-2">Schedule Your Consultation</h3>
+                            <p class="text-xs text-gray-500 mb-6">Fill out the form below and our team will contact you shortly to confirm your appointment.</p>
                             
                             <form id="clinicDirectContactForm" onsubmit="processFormTransmission(event, 'direct')" class="space-y-4">
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Your Full Name *</label>
+                                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
                                         <input type="text" id="directName" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all">
                                     </div>
                                     <div>
-                                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Active Phone Number *</label>
+                                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Mobile Number *</label>
                                         <input type="tel" id="directPhone" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all">
                                     </div>
                                 </div>
                                 <div>
-                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Select Preferred Clinic Hub *</label>
+                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Select Preferred Clinic Location *</label>
                                     <select id="directBranch" class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all">
-                                        <option value="Medavakkam HQ Branch">Medavakkam Corporate Central Hub</option>
-                                        <option value="S. Kolathur Wellness Branch">S. Kolathur Family Residential Branch</option>
+                                        <option value="Medavakkam ">Medavakkam Clinic </option>
+                                        <option value="S. Kolathur">S. Kolathur Clinic </option>
                                     </select>
                                 </div>
                                 <div>
-                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Brief Overview of Symptoms *</label>
-                                    <textarea id="directMsg" rows="4" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all" placeholder="Tell us about what you would like to address..."></textarea>
+                                    <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Tell Us About Your Health Concern *</label>
+                                    <textarea id="directMsg" rows="4" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all" placeholder="Briefly describe your symptoms or the health issue you would like to discuss with the doctor."></textarea>
                                 </div>
                                 <button type="submit" class="w-full py-3.5 bg-medical-600 hover:bg-medical-700 text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-md transition-colors">
-                                    Submit Registration Form & Route Email
+                                     Book Appointment 
                                 </button>
                             </form>
                         </div>
@@ -934,96 +1240,36 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
         </section>
     </div>
 
-    <div id="standaloneBlogPortalView" class="pt-24 hidden px-4 sm:px-6 min-h-screen max-w-7xl mx-auto space-y-12 pb-24">
-        <div class="border-b border-gray-200 pb-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 bg-white p-6 sm:p-8 rounded-3xl shadow-sm">
-            <div>
-                <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">Live Published Articles Matrix</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Health Awareness & Insights Portal</h2>
-                <p class="text-xs text-gray-500 mt-1.5">Welcome to your dedicated clean reading layout. New healthcare updates and educational content are posted here regularly.</p>
-            </div>
-            <button onclick="switchView('main')" class="w-full sm:w-auto px-5 py-2.5 bg-slate-900 text-white rounded-xl text-xs font-bold shadow hover:bg-slate-800 transition-all">
-                ← Return to Practice Main Page
-            </button>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="h-48 bg-slate-100 relative">
-                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80" alt="Remedy Selection Article" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-medical-900 text-white text-[10px] font-bold px-2.5 py-1 rounded">Science Corner</span>
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <h3 class="text-base font-bold text-slate-900">Demystifying Constitutional Remedy Selections</h3>
-                        <p class="text-xs text-gray-500 leading-relaxed">
-                            Explore the exact matching metrics used by classical practitioners to pair homeopathic dilutions with your physiological archetype safely.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 border-t border-gray-50 mt-4 flex justify-between items-center text-[11px] text-gray-400 font-bold">
-                    <span>📅 June 2026</span>
-                    <button onclick="alert('Navigating securely to individual nested reading panel...')" class="text-medical-600 hover:underline">Read Full Entry ↗</button>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="h-48 bg-slate-100 relative">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="PCOS Alignment Article" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-medical-900 text-white text-[10px] font-bold px-2.5 py-1 rounded">Women's Health</span>
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <h3 class="text-base font-bold text-slate-900">Natural Hormone Alignment Tracks for PCOS</h3>
-                        <p class="text-xs text-gray-500 leading-relaxed">
-                            An overview tracking how gentle homeopathic doses help resolve ovarian micro-cyst configurations and regulate cycles safely.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 border-t border-gray-50 mt-4 flex justify-between items-center text-[11px] text-gray-400 font-bold">
-                    <span>📅 May 2026</span>
-                    <button onclick="alert('Navigating securely to individual nested reading panel...')" class="text-medical-600 hover:underline">Read Full Entry ↗</button>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="h-48 bg-slate-100 relative">
-                        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80" alt="Pediatric Immune Post" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-medical-900 text-white text-[10px] font-bold px-2.5 py-1 rounded">Pediatrics</span>
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <h3 class="text-base font-bold text-slate-900">Understanding Pediatric Immune Shielding</h3>
-                        <p class="text-xs text-gray-500 leading-relaxed">
-                            Practical insights for modern parents looking to minimize antibiotic dependence for recurring seasonal cold and cough trends.
-                        </p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 border-t border-gray-50 mt-4 flex justify-between items-center text-[11px] text-gray-400 font-bold">
-                    <span>📅 May 2026</span>
-                    <button onclick="alert('Navigating securely to individual nested reading panel...')" class="text-medical-600 hover:underline">Read Full Entry ↗</button>
-                </div>
-            </article>
-        </div>
-    </div>
-
     <footer class="bg-[#040814] text-slate-300 pt-16 pb-8 px-6 border-t border-slate-900 text-xs">
         <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800/60">
             
             <div class="md:col-span-4 space-y-4">
    <!-- Clean Footer Image Logo -->
-                <div class="flex items-center gap-3">
+<div class="flex items-center gap-3 select-none">
                     <img src="assets/korv emr  (8).png" 
                          alt="Dr. Lakshmi's Homoeo Clinic Logo" 
-                         class="w-16 h-16 md:w-16 md:h-16 object-contain flex-shrink-0"
+                         class="w-14 h-14 md:w-16 md:h-16 object-contain flex-shrink-0"
                          onerror="this.style.border='1px solid #2da683';">
-                    <div>
-                        <span class="text-base font-extrabold text-white tracking-tight block">Dr. Lakshmi's</span>
-                        <span class="text-[10px] font-bold tracking-widest text-medical-400 uppercase block mt-0.5">Homoeo Clinic</span>
+                    
+                    <!-- Compressed vertical line-height architecture to frame slogan beautifully against dark footer backdrops -->
+                    <div class="min-w-0 flex flex-col justify-center space-y-0.5">
+                        <span class="text-base font-extrabold text-white tracking-tight block leading-tight">
+                            Dr. Lakshmi's
+                        </span>
+                        <span class="text-[10px] font-bold tracking-widest text-medical-400 uppercase block leading-none">
+                            Homoeo Clinic
+                        </span>
+                        <span class="text-[9px] font-medium tracking-normal text-slate-400 italic block leading-none pt-0.5 truncate">
+                            Families' Health Destination
+                        </span>
                     </div>
                 </div>
                 
                 <p class="text-slate-300 max-w-xs leading-relaxed text-xs">
-                    Board certified physicians specializing in non-surgical regenerative medicine and classical holistic homoeopathy since 2011.
+                Dr. Lakshmi's Homeopathy Clinic provides personalized treatment
+    for a wide range of health concerns including skin disorders,
+    hair fall, thyroid issues, PCOS, allergies, asthma, joint pain,
+    digestive problems, and child health care.
                 </p>
                 
                 <div class="flex gap-4 pt-2">
@@ -1059,16 +1305,17 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/>
                         </svg>
                     </a>
+                    
                 </div>
             </div>
 
             <div class="md:col-span-2 space-y-3.5">
                 <h4 class="font-bold text-white uppercase tracking-wider text-xs">Services</h4>
                 <ul class="space-y-4 text-slate-300 text-sm">
-                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Women's Wellness</a></li>
-                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Pediatric Care</a></li>
-                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Allergy Desensitization</a></li>
-                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Advanced Skin & Hair Care</a></li>
+                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Skin Problems & Allergies</a></li>
+                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> PCOS & Women's Health</a></li>
+                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Digestive Problems</a></li>
+                    <li><a href="#treatments" onclick="switchView('main')" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-slate-600">→</span> Children's Health Care</a></li>
                 </ul>
             </div>
 
@@ -1138,9 +1385,13 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
             </div>
 
         </div>
+        
 
         <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-500 font-medium gap-4">
             <p>© 2026 Dr. Lakshmi's Homoeo Clinic. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400">
+    Personalized Homeopathic Care for the Entire Family
+</p>
             <a href="Privacy_policy.html" onclick="alert('Displaying clinical security framework documentation details...')" class="hover:text-slate-300 transition-colors uppercase font-bold tracking-wider text-[9px]">Privacy Policy</a>
         </div>
     </footer>
@@ -1220,7 +1471,7 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
         </div>
     </div>
 
-    <script>
+<script>
         document.addEventListener("DOMContentLoaded", function() {
             AOS.init({ duration: 800, once: true });
             setupDraggableSlider();
@@ -1250,76 +1501,142 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
 
         function showDisplayElement(id) {
             const el = document.getElementById(id);
+            if(!el) return;
             el.classList.remove('hidden'); el.classList.add('flex');
             setTimeout(() => {
-                el.querySelector('div').classList.remove('scale-95');
-                el.querySelector('div').classList.add('scale-100');
+                const innerDiv = el.querySelector('div');
+                if(innerDiv) {
+                    innerDiv.classList.remove('scale-95');
+                    innerDiv.classList.add('scale-100');
+                }
             }, 30);
         }
 
         function hideDisplayElement(id) {
             const el = document.getElementById(id);
-            el.querySelector('div').classList.remove('scale-100');
-            el.querySelector('div').classList.add('scale-95');
+            if(!el) return;
+            const innerDiv = el.querySelector('div');
+            if(innerDiv) {
+                innerDiv.classList.remove('scale-100');
+                innerDiv.classList.add('scale-95');
+            }
             setTimeout(() => { el.classList.remove('flex'); el.classList.add('hidden'); }, 200);
         }
 
         function openAppointmentModal() { showDisplayElement('appointmentIntakeModal'); }
         function closeAppointmentModal() { hideDisplayElement('appointmentIntakeModal'); }
 
+        // COMPLETE HIGHEST-FIDELITY CLINICAL PATHOLOGY DATABASE MATRIX
         const treatmentDatabase = {
-            'womens-wellness': {
-                title: "Women's Wellness & Hormonal Axis Protocols",
-                image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80",
-                desc: "Our diagnostic platform maps underlying endocrine imbalances. We develop custom remedy frameworks to treat the root causes of PCOS/PCOD profiles, chronic cycle disruptions, thyroid alignment drops, and anxiety-related emotional stress fields safely."
+            'womens-health': {
+                title: "Women's Health & PCOS Care",
+                image: "assets/womenpcot.png",
+                desc: "Homeopathy offers a highly effective, gentle approach to women's endocrine health. Instead of using artificial hormones or contraceptive pills that merely suppress symptoms, our treatment addresses the root cause of hormonal dysfunction. By stimulating the body's natural regulatory systems, we help correct ovarian function, reduce cystic formations, restore regular menstrual cycles naturally, and alleviate the underlying metabolic factors associated with PCOS, acne, and unexplained weight changes."
             },
             'pediatric-care': {
-                title: "Pediatric Care & Natural Immunity Frameworks",
-                image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80",
-                desc: "Children respond beautifully to subtle natural remedies. Our pediatric care focuses on long-term respiratory tracking, safely addressing recurring tonsillitis congestion patterns, primary bronchial hyper-responsiveness, persistent childhood allergies, and low absorption metrics."
+                title: "Children's Health & Immunity Care",
+                image: "assets/child_care.png",
+                desc: "Children respond beautifully and rapidly to natural homeopathic remedies due to their active vital force. Our non-toxic micro-doses are easy for children to take without any stress. Our core pediatric focus aims to safely enhance your child's natural defense barriers, reducing dependence on frequent antibiotics or anti-pyretics for common recurring throat infections, adenoids, digestive bugs, and respiratory sensitivities."
             },
             'allergy-care': {
-                title: "Allergy & Respiratory Desensitization Maps",
-                image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80",
-                desc: "Instead of simply blocking histamine production temporarily, our constitutional remedies systematically downregulate your immune system's hyper-reactive trigger loops. This protocol delivers highly effective, long-term relief for chronic morning sneezing fits, sinusitis, wheezing tracking, and dust or pollen sensitivities."
+                title: "Asthma & Allergy Care",
+                image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80",
+                desc: "Standard anti-allergy medications offer temporary blockages to histamine releases. Homeopathy, by contrast, desensitizes your overactive immune response pathways over time. Our treatments target root genetic and environmental vulnerabilities, providing long-term relief from wheezing, constant sneezing, chronic nasal congestion, and sinus pressure safely without inducing drowsiness or dependency."
             },
             'skin-care': {
-                title: "Advanced Skin & Hair Pathology Care",
-                image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80",
-                desc: "Constitutional strategies aiming to cool dermal inflammation loops from within. Addresses persistent atopic dermatitis, eczema flare-ups, scalp scaling dandruff, and pattern hair thinning cycles safely."
+                title: "Skin & Hair Care",
+                image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80",
+                desc: "Skin manifestations are outward expressions of internal metabolic or immunological imbalances. Suppressing them with strong chemical steroid creams can push the pathology deeper. Homeopathy addresses skin disorders from the inside out. We clear toxins and optimize systemic health to clear acne marks, heal raw eczematous layers, stop active hair root shrinkage, and stimulate natural, lasting tissue rejuvenation."
             },
             'joint-care': {
-                title: "Joint, Musculoskeletal & Arthritis Care",
-                image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80",
-                desc: "Safely addresses rheumatoid inflammatory matrices and localized cartilage optimization problems. Helps maintain fluid joint flexibility indexes, relieving sciatic irritation patterns and lumbar muscle spastic trends securely."
+                title: "Joint Pain & Arthritis Care",
+                image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80",
+                desc: "Chronic pain management shouldn't mean relying indefinitely on painkillers that can irritate the stomach. Homeopathy focuses on reducing joint synovial fluid inflammation, restoring flexible mobility tracking parameters, and stopping progressive tissue degeneration. Our targeted natural treatments safely reduce muscle soreness, ease morning stiffness, and help you get back to an active lifestyle."
             },
             'digestive-care': {
-                title: "Digestive & Gastrointestinal Balance",
+                title: "Digestive Health Care",
+                image: "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=600&q=80",
+                desc: "Frequent antacids only offer brief, artificial neutralizations of stomach acid. Homeopathy works by normalizing gastric juices and restoring smooth intestinal motility patterns. Our constitutional path improves assimilation, heals chronic mucosal inflammation, reduces painful cramping spikes, and builds a resilient gut microbiome naturally."
+            },
+            'thyroid-care': {
+                title: "Thyroid & Hormonal Health",
+                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80",
+                desc: "Homeopathic thyroid care does not focus on supplying synthetic hormones. Instead, it aims to optimize the thyroid gland's natural performance. By balancing emotional and physiological root causes, we safely address chronic exhaustion, sluggish metabolism, unexpected weight gain, and related hormonal shifts."
+            },
+            'mental-wellness': {
+                title: "Stress, Anxiety & Sleep Care",
+                image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80",
+                desc: "Our mind-body constitutional remedies calm an overstimulated nervous system without using sedatives or forming chemical habits. By exploring individual emotional blueprints and stress triggers, we offer safe, natural assistance to lower panic spikes, quiet racing thoughts before bed, and improve deep sleep quality."
+            },
+            'respiratory-care': {
+                title: "Frequent Cold & Cough Care",
+                image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80",
+                desc: "Frequent respiratory issues suggest an easily compromised immune response. Homeopathic remedies safely break the cycle of chronic susceptibility by strengthening your natural ENT defense barriers, reducing recovery times, and decreasing the severity of seasonal triggers."
+            },
+            'immunity-care': {
+                title: "Immunity Support Care",
                 image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80",
-                desc: "Corrects metabolic assimilation paths, acid balance anomalies, and stomach motility issues. Provides long-term management tracking templates for gut inflammation flare-ups and irritable bowel patterns (IBS)."
+                desc: "Our constitutional treatment is tailored to revive your primary vital force. By addressing nutrient assimilation, cellular energy, and stress responses, it strengthens resistance against seasonal pathogens and helps establish robust, long-term health metrics for adults and children who frequently fall sick."
             }
         };
 
+        // CLINICAL MODAL TRIGGER CONTROLLER WITH DYNAMIC ASPECT RATIO OVERRIDES
         function openTreatmentModal(key) {
             const node = treatmentDatabase[key];
-            if(!node) return;
-            document.getElementById('popupTreatmentTitle').innerText = node.title;
-            document.getElementById('popupTreatmentImg').src = node.image;
-            document.getElementById('popupTreatmentDesc').innerText = node.desc;
-            showDisplayElement('treatmentDetailsModal');
+            if(!node) {
+                console.error("No medical database data found for configuration key: " + key);
+                return;
+            }
+            
+            // Map seamlessly to the structural overlay content containers
+            const titleEl = document.getElementById('popupTreatmentTitle') || document.getElementById('modalTreatmentTitle');
+            const imgEl = document.getElementById('popupTreatmentImg') || document.getElementById('modalTreatmentImg');
+            const descEl = document.getElementById('popupTreatmentDesc') || document.getElementById('modalTreatmentBody');
+            const modalId = 'treatmentDetailsModal';
+            
+            if (titleEl) titleEl.innerText = node.title;
+            if (descEl) descEl.innerText = node.desc;
+            
+            if (imgEl) {
+                imgEl.src = node.image;
+                
+                // DYNAMIC CANVASS SCALE ACCORDANCE LOOP:
+                // If the target source is a widescreen custom infographic banner, use fill layout tracking
+                if (key === 'womens-health' || key === 'pediatric-care') {
+                    imgEl.classList.remove('object-cover');
+                    imgEl.classList.add('object-fill');
+                } else {
+                    // Maintain cover parameters for standard ambient photographic assets
+                    imgEl.classList.remove('object-fill');
+                    imgEl.classList.add('object-cover');
+                }
+            }
+            
+            showDisplayElement(modalId);
         }
-        function closeTreatmentModal() { hideDisplayElement('treatmentDetailsModal'); }
 
+        function closeTreatmentModal() { 
+            const modalId = 'treatmentDetailsModal';
+            hideDisplayElement(modalId); 
+        }
+
+        // ACCORDION ENGINE FOR ACCORDION LAYOUT PATTERNS
         function toggleFaqCard(buttonElement) {
             const currentCard = buttonElement.parentElement;
             const container = document.getElementById('accordionContainer');
+            if(!container) return;
+            
             const allCards = container.querySelectorAll('.faq-card');
-            allCards.forEach(card => { if(card !== currentCard) card.classList.remove('active'); });
+            allCards.forEach(card => { 
+                if(card !== currentCard) card.classList.remove('active'); 
+            });
             currentCard.classList.toggle('active');
         }
 
+        // DEPRECATED SLIDER DRAG OPERATIONS FALLBACK
         function setupDraggableSlider() {
-            const slider = document.getElementById('dragSlider'); if(!slider) return;
+            const slider = document.getElementById('dragSlider'); 
+            if(!slider) return; // Silent pass safely if bento grid masonry layout is applied instead
             let isDown = false; let startX; let scrollLeft;
             slider.addEventListener('mousedown', (e) => { isDown = true; startX = e.pageX - slider.offsetLeft; scrollLeft = slider.scrollLeft; });
             slider.addEventListener('mouseleave', () => isDown = false);
@@ -1327,14 +1644,24 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
             slider.addEventListener('mousemove', (e) => { if(!isDown) return; e.preventDefault(); const x = e.pageX - slider.offsetLeft; const walk = (x - startX) * 1.5; slider.scrollLeft = scrollLeft - walk; });
         }
 
+        // GOOGLE MASONRY BENTO GRID PANEL POPOVER DETOURS
         function openReviewPopup(author, category, text) {
-            document.getElementById('popupReviewAuthor').innerText = author;
-            document.getElementById('popupReviewCategory').innerText = category;
-            document.getElementById('popupReviewMainText').innerText = `"${text}"`;
-            showDisplayElement('reviewExpansionPanel');
+            const authorEl = document.getElementById('popupReviewAuthor');
+            const categoryEl = document.getElementById('popupReviewCategory');
+            const textEl = document.getElementById('popupReviewMainText');
+            
+            if (authorEl && categoryEl && textEl) {
+                authorEl.innerText = author;
+                categoryEl.innerText = category;
+                textEl.innerText = `"${text}"`;
+                showDisplayElement('reviewExpansionPanel');
+            } else {
+                console.warn("Review panel view layers missing from compilation trace.");
+            }
         }
         function closeReviewPopup() { hideDisplayElement('reviewExpansionPanel'); }
 
+        // SECURE CONTEXT APPOINTMENT METRIC TRANSMISSION HANDLER
         function processFormTransmission(event, strategy) {
             event.preventDefault();
             let patientName = strategy === 'modal' ? document.getElementById('modalName').value.trim() : document.getElementById('directName').value.trim();
@@ -1343,8 +1670,12 @@ class="w-full sm:w-auto bg-gradient-to-r from-medical-600 to-medical-700 border 
             
             alert(`✓ Success!\n\nThank you, ${patientName}. An automated data notification email has been generated and routed straight to the care desk management system at our ${hub.toUpperCase()} branch.\n\nOur team will call you back at ${contactNumber} within a few business hours to confirm your consultation time.`);
             
-            if(strategy === 'modal') { document.getElementById('modalAppointmentForm').reset(); closeAppointmentModal(); }
-            else document.getElementById('clinicDirectContactForm').reset();
+            if(strategy === 'modal') { 
+                document.getElementById('modalAppointmentForm').reset(); 
+                closeAppointmentModal(); 
+            } else {
+                document.getElementById('clinicDirectContactForm').reset();
+            }
         }
     </script>
 </body>
