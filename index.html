@@ -159,39 +159,45 @@ tailwind.config = {
 </head>
 <body class="bg-white text-gray-800 antialiased">
 
+
 <!-- ========================================== -->
-<!-- ========================================== -->
-    <!-- COMPACT STICKY TWO-ROW NAVIGATION HEADER   -->
+    <!--   PREMIUM BALANCED NAV COMPONENT CODE     -->
     <!-- ========================================== -->
-    <header class="fixed top-0 left-0 right-0 z-50 glass-nav shadow-sm select-none">
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav shadow-sm select-none bg-white/90 backdrop-blur-md">
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             
-            <!-- UPPER TRACK ROW: BRAND IDENTITY LOGO & HAMBURGER MENU TOGGLE -->
-            <div class="flex justify-between items-center h-16 sm:h-20">
+            <!-- UPPER TRACK ROW: BRAND IDENTITY LOGO & ACTIONS TRACKING -->
+            <div class="flex justify-between items-center h-16 sm:h-20 gap-4">
                 
-                <!-- Anti-Shrink Mobile Brand Logo Container -->
-<!-- Clean Image Logo with No Backgrounds or Extras -->
-<a href="#" onclick="switchView('main')" class="flex items-center gap-3 max-w-[65%] sm:max-w-none group focus:outline-none flex-shrink-0">
-                    <img src="assets/korv emr  (9).png" 
+                <!-- Anti-Shrink Brand Logo Column Link -->
+<!-- Perfect Center-Aligned Mobile & Desktop Brand Logo Container -->
+                <a href="#" onclick="switchView('main')" class="flex items-center gap-3 max-w-[75%] sm:max-w-none group focus:outline-none flex-shrink-0 select-none">
+                    <img src="assets/laksh (1).png" 
                          alt="Dr. Lakshmi's Homoeo Clinic Logo" 
-                         class="w-12 h-12 sm:w-14 sm:h-14 object-contain flex-shrink-0 transform group-hover:scale-105 transition-transform duration-300">
+                         class="w-16 h-16 sm:w-[4.5rem] sm:h-[4.5rem] object-contain flex-shrink-0 transform group-hover:scale-105 transition-transform duration-300">
                     
-                    <div class="min-w-0 flex flex-col justify-center space-y-0.5">
-                        <h1 class="text-sm sm:text-base font-extrabold tracking-tight text-gray-900 leading-tight truncate">
-                            Dr. Lakshmi's
-                        </h1>
-                        <span class="text-[9px] sm:text-[10px] font-bold tracking-widest text-medical-600 uppercase block leading-none truncate">
-                            Homoeo Clinic
-                        </span>
-                        <span class="text-[8px] sm:text-[9px] font-medium tracking-normal text-slate-400 italic block leading-none pt-0.5 truncate">
-                            Families Health Destination
+                    <!-- Space-y-1 balanced with items-center anchors the elements to the true center point -->
+                    <div class="min-w-0 flex flex-col justify-center space-y-1">
+                        
+                        <!-- Primary Single Line Text Row - items-center ensures exact centering beside the logo canvas -->
+                        <div class="flex items-center gap-x-1.5 leading-none">
+                            <h1 class="text-sm sm:text-base font-extrabold tracking-tight text-medical-700 whitespace-nowrap">
+                                Dr. Lakshmi's
+                            </h1>
+                            <span class="text-sm sm:text-base font-extrabold tracking-tight text-slate-900 whitespace-nowrap">
+                                Homoeo Clinic
+                            </span>
+                        </div>
+                        
+                        <!-- Lower Tagline Row Block -->
+                        <span class="text-xs sm:text-sm font-semibold tracking-normal text-medical-600/80 italic block leading-none truncate">
+                            Families' Health Destination
                         </span>
                     </div>
                 </a>
-
-                <!-- DESKTOP DISPLAY MAIN LINK DESK (AUTOMATICALLY HIDDEN ON MOBILE) -->
-                <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <!-- MIDDLE NAVIGATION DESK: DEAD-CENTERED & FLEX COMPLIANT -->
+                <nav class="hidden lg:flex flex-1 justify-center items-center gap-x-5 xl:gap-x-7 text-sm font-bold text-gray-600 whitespace-nowrap px-4">
                     <a href="#" onclick="switchView('main')" class="hover:text-medical-600 transition-colors">Home</a>
                     <a href="#about" onclick="switchView('main')" class="hover:text-medical-600 transition-colors">Our Doctors</a>
                     <a href="#treatments" onclick="switchView('main')" class="hover:text-medical-600 transition-colors">Treatments</a>
@@ -202,21 +208,21 @@ tailwind.config = {
                     <a href="#contact" onclick="switchView('main')" class="hover:text-medical-600 transition-colors">Contact</a>
                 </nav>
 
-                <!-- DESKTOP SCREEN ACTIONS CALL LAYERS -->
+                <!-- DESKTOP SCREEN ACTIONS: SHRINK PROOFED DOCK LAYER -->
                 <div class="hidden lg:flex items-center gap-3 flex-shrink-0">
-                    <button onclick="openAppointmentModal()" class="inline-flex items-center justify-center px-5 py-2.5 font-bold text-sm text-white bg-medical-600 rounded-xl shadow-md transition-all hover:bg-medical-700">
+                    <button onclick="openAppointmentModal()" class="inline-flex items-center justify-center px-5 py-2.5 font-bold text-sm text-white bg-medical-600 rounded-xl shadow-md transition-all hover:bg-medical-700 whitespace-nowrap">
                         Book Appointment
                     </button>
                     <a href="https://wa.me/919677173387?text=Hi%20want%20to%20book%20an%20appointment" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="p-2.5 bg-emerald-50 text-[#25D366] rounded-xl hover:bg-emerald-100 transition-colors flex items-center justify-center w-10 h-10 shadow-sm" 
+                       class="p-2.5 bg-emerald-50 text-[#25D366] rounded-xl hover:bg-emerald-100 transition-colors flex items-center justify-center w-10 h-10 shadow-sm flex-shrink-0" 
                        title="Chat on WhatsApp">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.137-.241-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.401-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.135-1.61a11.822 11.822 0 005.904 1.599h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     </a>
                 </div>
 
-                <!-- Modern Vector Hamburger Menu Trigger Icon -->
+                <!-- Modern Mobile Toggle Indicator Menu Button -->
                 <button onclick="toggleMobileMenu()" class="p-2 lg:hidden bg-white border border-gray-200 text-gray-700 rounded-xl focus:outline-none flex items-center justify-center w-9 h-9 flex-shrink-0" aria-label="Toggle Navigation">
                     <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -226,26 +232,21 @@ tailwind.config = {
                 </button>
             </div>
 
-            <!-- LOWER TRACK ROW: PROPORTIONAL GRID (PREVENTS OVERFLOW AND DRAGGING) -->
-            <div class="flex lg:hidden items-center justify-between border-t border-gray-100 pb-3 pt-2 text-[11px] font-extrabold text-gray-600 uppercase tracking-wider">
-                <!-- Proportional Links Matrix Zone -->
-                <div class="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+            <!-- LOWER TRACK ROW: MOBILE QUICK BAR (PREVENTS SUB-NAV OVERFLOWS) -->
+            <div class="flex lg:hidden items-center justify-between border-t border-gray-100 pb-3 pt-2 text-[11px] font-black text-gray-600 uppercase tracking-wider">
+                <div class="flex items-center gap-4 flex-shrink-0">
                     <a href="#" onclick="switchView('main')" class="hover:text-medical-600 transition-colors">Home</a>
                     <a href="blogs.html" class="hover:text-medical-600 transition-colors">Blogs</a>
                 </div>
                 
-                <!-- Action Controls Anchor Dock Container -->
-                <div class="flex items-center gap-1.5 flex-shrink-0">
-                    <!-- Quick Fixed Action Button -->
-                    <button onclick="openAppointmentModal()" class="px-3 sm:px-4 py-2 bg-medical-600 text-white rounded-lg font-bold text-[10px] sm:text-[11px] uppercase shadow-sm tracking-normal whitespace-nowrap">
+                <div class="flex items-center gap-2 flex-shrink-0">
+                    <button onclick="openAppointmentModal()" class="px-3 py-2 bg-medical-600 text-white rounded-lg font-bold text-[10px] uppercase shadow-sm tracking-normal whitespace-nowrap">
                         Book Slot
                     </button>
-
-                    <!-- WhatsApp Icon Link -->
                     <a href="https://wa.me/919677173387?text=Hi%20want%20to%20book%20an%20appointment" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="p-1.5 bg-emerald-50 text-[#25D366] rounded-xl flex items-center justify-center w-7.5 h-7.5 sm:w-8 sm:h-8 shadow-inner border border-emerald-100/60"
+                       class="p-1.5 bg-emerald-50 text-[#25D366] rounded-xl flex items-center justify-center w-8 h-8 shadow-inner border border-emerald-100/60"
                        title="WhatsApp Booking">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.137-.241-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.401-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.135-1.61a11.822 11.822 0 005.904 1.599h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     </a>
@@ -254,35 +255,41 @@ tailwind.config = {
 
         </div>
 
-        <!-- HIDDEN STACK ACCORDION DROP-DOWN LINKS AREA FOR EXTENDED TARGETS -->
-        <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 bg-white border-t border-b border-gray-100 px-6 py-5 space-y-4 shadow-xl z-50 animate-fade-in animate-duration-200">
-            <nav class="flex flex-col gap-4 font-semibold text-gray-700 text-sm">
+        <!-- MOBILE EXPANDABLE OVERLAY DRAWER -->
+        <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 px-6 py-5 space-y-4 shadow-xl z-50">
+            <nav class="flex flex-col gap-4 font-bold text-gray-700 text-sm">
                 <a href="#" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">Home</a>
                 <a href="#about" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">Our Doctors</a>
                 <a href="#treatments" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">Treatments</a>
                 <a href="#benefits" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">Benefits</a>
                 <a href="#testimonials" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">Success Stories</a>
                 <a href="#faqs" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">FAQ</a>
-                <a href="blogs.html" onclick="toggleMobileMenu();" class="text-medical-600 font-bold py-1">Blogs</a>
+                <a href="blogs.html" onclick="toggleMobileMenu();" class="text-medical-600 py-1">Blogs</a>
                 <a href="#contact" onclick="toggleMobileMenu(); switchView('main');" class="hover:text-medical-600 transition-colors py-1">Contact</a>
             </nav>
             <div class="pt-4 border-t border-gray-100 space-y-3">
-                <button onclick="toggleMobileMenu(); openAppointmentModal();" class="w-full bg-medical-600 hover:bg-medical-700 text-white font-extrabold py-3 rounded-xl text-center text-sm shadow-md transition-all">
+                <!-- Standard Clinic Booking Button Trigger -->
+                <button onclick="toggleMobileMenu(); openAppointmentModal();" class="w-full bg-medical-600 hover:bg-medical-700 text-white font-extrabold py-3 rounded-xl text-center text-sm shadow-md transition-all active:scale-[0.98]">
                     📅 Book Appointment
                 </button>
-                <a href="https://wa.me/919677173387?text=Hi%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-emerald-50 text-[#25D366] border border-emerald-100 font-extrabold py-3 rounded-xl text-sm hover:bg-emerald-100 transition-all">
-                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.137-.241-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.401-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+                
+                <!-- Upgraded WhatsApp Button with Direct SVG Icon Integration -->
+                <a href="https://wa.me/919677173387?text=Hi%20want%20to%20book%20an%20appointment" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="w-full flex items-center justify-center gap-2.5 bg-emerald-50 text-[#25D366] border border-emerald-100 font-extrabold py-3 rounded-xl text-sm hover:bg-emerald-100 transition-all active:scale-[0.98] group">
+                    <!-- Crisp inline WhatsApp brand path -->
+                    <svg class="w-5 h-5 fill-current transform group-hover:scale-110 transition-transform" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.137-.241-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.401-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.135-1.61a11.822 11.822 0 005.904 1.599h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                     </svg>
-                    WhatsApp Booking
+                    <span>WhatsApp Booking</span>
                 </a>
             </div>
         </div>
-    </header>
+</header>
 
     <div id="mainClinicAppView" class="pt-16 block">
         
-<!-- ========================================== -->
         <!-- PREMIUM DYNAMIC HERO SEGMENT               -->
         <!-- ========================================== -->
 <section class="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-medical-50 via-white to-emerald-50/50 px-4 sm:px-8 sm:py-20 lg:py-0">
@@ -748,7 +755,7 @@ tailwind.config = {
             <div class="bg-white rounded-3xl border border-gray-200/70 p-6 sm:p-10 text-center shadow-xs max-w-4xl mx-auto">
                 <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 mb-3 tracking-tight">Not Sure If We Treat Your Specific Condition?</h3>
                 <p class="text-gray-500 mb-6 font-medium text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
-                    Homeopathy looks at the individual as a whole, not just isolated diagnoses. Contact our clinic desk to review your symptoms and set up an evaluation.
+                    Homoeopathy looks at the individual as a whole, not just isolated diagnoses. Contact our clinic desk to review your symptoms and set up an evaluation.
                 </p>
                 <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 rounded-xl bg-medical-600 text-white font-extrabold text-sm hover:bg-medical-700 transition shadow-md shadow-medical-600/10">Book Personalized Consultation</a>
             </div>
@@ -1192,10 +1199,14 @@ tailwind.config = {
         </div>
     </section>
 
+<!-- ========================================== -->
+        <!--    UPGRADED LANDING PAGE CONTACT SECTION    -->
+        <!-- ========================================== -->
         <section id="contact" class="py-24 bg-slate-50 px-4 sm:px-6 border-t border-gray-200">
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-12 gap-12 items-stretch">
                     
+                    <!-- Left Form Panel Zone -->
                     <div class="lg:col-span-6 bg-white p-5 sm:p-10 rounded-[2rem] border border-gray-200 shadow-sm flex flex-col justify-between" data-aos="fade-right">
                         <div>
                             <span class="text-xs font-bold tracking-widest text-medical-600 uppercase">BOOK AN APPOINTMENT</span>
@@ -1203,37 +1214,73 @@ tailwind.config = {
                             <p class="text-xs text-gray-500 mb-6">Fill out the form below and our team will contact you shortly to confirm your appointment.</p>
                             
                             <form id="clinicDirectContactForm" onsubmit="processFormTransmission(event, 'direct')" class="space-y-4">
+                                <!-- Row 1: Name and Mobile Details -->
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div>
                                         <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
-                                        <input type="text" id="directName" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all">
+                                        <input type="text" id="directName" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium">
                                     </div>
                                     <div>
                                         <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Mobile Number *</label>
-                                        <input type="tel" id="directPhone" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all">
+                                        <input type="tel" id="directPhone" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium">
                                     </div>
                                 </div>
+
+                                <!-- Row 2: Date & Time Custom Additions -->
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Preferred Date *</label>
+                                        <input type="date" id="directDate" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium text-slate-700">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Preferred Time *</label>
+                                        <select id="directTime" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium text-slate-700">
+                                            <option value="" disabled selected hidden>Select Time</option>
+                                            <option value="09:00 AM">09:00 AM</option>
+                                            <option value="09:30 AM">09:30 AM</option>
+                                            <option value="10:00 AM">10:00 AM</option>
+                                            <option value="10:30 AM">10:30 AM</option>
+                                            <option value="11:00 AM">11:00 AM</option>
+                                            <option value="11:30 AM">11:30 AM</option>
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="05:00 PM">05:00 PM</option>
+                                            <option value="05:30 PM">05:30 PM</option>
+                                            <option value="06:00 PM">06:00 PM</option>
+                                            <option value="06:30 PM">06:30 PM</option>
+                                            <option value="07:00 PM">07:00 PM</option>
+                                            <option value="07:30 PM">07:30 PM</option>
+                                            <option value="08:00 PM">08:00 PM</option>
+                                            <option value="08:30 PM">08:30 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Row 3: Clinic Selection Dropdown -->
                                 <div>
                                     <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Select Preferred Clinic Location *</label>
-                                    <select id="directBranch" class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all">
-                                        <option value="Medavakkam ">Medavakkam Clinic </option>
-                                        <option value="S. Kolathur">S. Kolathur Clinic </option>
+                                    <select id="directBranch" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium text-slate-700">
+                                        <option value="Medavakkam Clinic">Medavakkam Clinic</option>
+                                        <option value="Kolathur Clinic">Kolathur Clinic</option>
                                     </select>
                                 </div>
+
+                                <!-- Row 4: Mandatory Concern Field Input Textbox -->
                                 <div>
                                     <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Tell Us About Your Health Concern *</label>
-                                    <textarea id="directMsg" rows="4" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all" placeholder="Briefly describe your symptoms or the health issue you would like to discuss with the doctor."></textarea>
+                                    <textarea id="directMsg" rows="3" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium leading-relaxed" placeholder="Briefly describe your symptoms or the health issue you would like to discuss with the doctor."></textarea>
                                 </div>
-                                <button type="submit" class="w-full py-3.5 bg-medical-600 hover:bg-medical-700 text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-md transition-colors">
+
+                                <button type="submit" class="w-full py-3.5 bg-medical-600 hover:bg-medical-700 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-md transition-all active:scale-[0.99]">
                                      Book Appointment 
                                 </button>
                             </form>
                         </div>
                     </div>
 
-                    <div class="lg:col-span-6 bg-white p-3 rounded-[2rem] border border-gray-200 shadow-sm min-h-[355px] flex" data-aos="fade-left">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62206.730728071394!2d80.16776412115074!3d12.976925606023642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d116500b3d7%3A0xb25106501a719457!2sDr.lakshmi&#39;s%20Homoeopathic%20clinic!5e0!3m2!1sen!2sin!4v1781250566583!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   </div>
+                    <!-- Right Embedded Map Panel Zone -->
+                    <div class="lg:col-span-6 bg-white p-3 rounded-[2rem] border border-gray-200 shadow-sm min-h-[355px] flex overflow-hidden" data-aos="fade-left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62206.730728071394!2d80.16776412115074!3d12.976925606023642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d116500b3d7%3A0xb25106501a719457!2sDr.lakshmi&#39;s%20Homoeopathic%20clinic!5e0!3m2!1sen!2sin!4v1781250566583!5m2!1sen!2sin" class="w-full h-full rounded-2xl min-h-[400px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
 
                 </div>
             </div>
@@ -1273,7 +1320,7 @@ tailwind.config = {
                 </p>
                 
                 <div class="flex gap-4 pt-2">
-                    <a href="https://facebook.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61568765476317" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="Facebook">
                         <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                         </svg>
@@ -1285,7 +1332,7 @@ tailwind.config = {
                         </svg>
                     </a>
                     
-                    <a href="https://youtube.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="YouTube">
+                    <a href="https://www.youtube.com/@Dr.LakshmisHomoeoClinic" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="YouTube">
                         <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                             <rect x="2" y="3" width="20" height="14" rx="2.18" ry="2.18"/>
                             <path d="M10 8l5 3-5 3V8z"/>
@@ -1299,7 +1346,7 @@ tailwind.config = {
                         </svg>
                     </a>
                     
-                    <a href="https://instagram.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="Instagram">
+                    <a href="https://www.instagram.com/dr_lakshmi_homoeo_clinic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==  qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="Instagram">
                         <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/>
@@ -1416,38 +1463,104 @@ tailwind.config = {
         </div>
     </div>
 
-    <div id="appointmentIntakeModal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4 transition-all duration-300">
-        <div class="bg-white rounded-[2rem] max-w-md w-full p-6 sm:p-8 shadow-2xl relative transform scale-95 transition-transform duration-300">
-            <button onclick="closeAppointmentModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-sm font-bold text-gray-500 hover:text-gray-800 focus:outline-none">✕</button>
-            <div class="text-center mb-6">
-                <span class="text-2xl">📅</span>
-                <h3 class="text-lg font-bold text-slate-900 mt-1">Request Consultation Appointment</h3>
-                <p class="text-xs text-gray-400 mt-0.5">Submitting alerts our scheduling grid directly via secure email integration routing channels.</p>
+    <div id="bookingSuccessModal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-md z-[60] hidden items-center justify-center p-4 transition-all duration-300 select-none">
+        <div class="bg-white rounded-[2rem] max-w-sm w-full p-6 text-center shadow-2xl relative transform scale-95 transition-transform duration-300 border border-slate-100">
+            
+            <div class="w-16 h-16 bg-emerald-50 border border-emerald-100 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 shadow-inner text-emerald-500 animate-pulse">
+                ✓
             </div>
-            <form id="modalAppointmentForm" onsubmit="processFormTransmission(event, 'modal')" class="space-y-4">
+            
+            <h4 class="text-xl font-black text-slate-900 tracking-tight">Appointment Request Received</h4>
+            <p class="text-xs font-semibold text-medical-600 mt-1 bg-medical-50/60 inline-block px-3 py-1 rounded-full border border-medical-100">
+                Thank you for reaching out to us.
+            </p>
+            
+            <hr class="my-4 border-slate-100">
+            
+            <div class="bg-slate-50 rounded-2xl p-3.5 text-left space-y-2 border border-slate-200/40 text-xs font-medium text-slate-600 mb-5">
+                <div class="flex justify-between"><span class="text-slate-400">Patient:</span> <span id="successReceiptName" class="font-bold text-slate-900 truncate max-w-[180px]">---</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Location:</span> <span id="successReceiptBranch" class="font-bold text-slate-900">---</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Schedule:</span> <span id="successReceiptDateTime" class="font-bold text-medical-600">---</span></div>
+            </div>
+
+            <div class="space-y-2.5">
+                <a id="successWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-extrabold py-3 rounded-xl text-xs uppercase tracking-wider shadow-md shadow-emerald-200/50 transition-all active:scale-[0.99]">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.137-.241-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.401-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.135-1.61a11.822 11.822 0 005.904 1.599h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span>Chat to Speed Up Call</span>
+                </a>
+                
+                <button onclick="closeSuccessModal()" class="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-wider rounded-xl transition-all">
+                    Got it, Close (<span id="successCountdown">8</span>s)
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- ========================================================= -->
+    <!--  ZERO-SCROLL SMART-LOCK CLINICAL APPOINTMENT INTAKE MODAL -->
+    <!-- ========================================================= -->
+    <div id="appointmentIntakeModal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 hidden items-center justify-center p-3 transition-all duration-300">
+        <!-- Removed extra padding (p-5), reduced max-width, eliminated overflow scrolling completely -->
+        <div class="bg-white rounded-[1.8rem] max-w-sm w-full p-5 shadow-2xl relative transform scale-95 transition-transform duration-300">
+            
+            <!-- Close Modal Trigger Button -->
+            <button onclick="closeAppointmentModal()" class="absolute top-4 right-4 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-xs font-bold text-gray-500 hover:text-gray-800 transition-colors focus:outline-none" aria-label="Close Modal">✕</button>
+            
+            <!-- Compact Header (Saves vertical screen space on mobile) -->
+            <div class="text-center mb-3">
+                <h3 class="text-base font-extrabold text-slate-900 tracking-tight">Book an Appointment</h3>
+                <p class="text-[11px] text-gray-400 mt-0.5">Schedule your consultation with Dr. Lakshmi.</p>
+            </div>
+            
+            <!-- Fully Customized Form Layout Matrix -->
+            <form id="modalAppointmentForm" onsubmit="processFormTransmission(event, 'modal')" class="space-y-3">
+                
+                <!-- Field 1: Full Name Input -->
                 <div>
-                    <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Patient Full Name *</label>
-                    <input type="text" id="modalName" required class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                    <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Full Name *</label>
+                    <input type="text" id="modalName" required placeholder="Enter your full name" class="w-full bg-slate-50 border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-medical-500 focus:bg-white transition-all font-medium">
                 </div>
+                
+                <!-- Field 2: Mobile Number Input -->
                 <div>
-                    <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Contact Phone Number *</label>
-                    <input type="tel" id="modalPhone" required class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                    <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Mobile Number *</label>
+                    <input type="tel" id="modalPhone" required placeholder="Enter your mobile number" class="w-full bg-slate-50 border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-medical-500 focus:bg-white transition-all font-medium">
                 </div>
-                <div class="grid grid-cols-2 gap-4">
+                
+                <!-- Field 3: Clinic Location Dropdown (Moved higher up to prioritize slot calculation matching) -->
+                <div>
+                    <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Clinic Location *</label>
+                    <select id="modalBranch" required onchange="updateAvailableTimeSlots()" class="w-full bg-slate-50 border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-medical-500 focus:bg-white transition-all font-medium text-slate-700">
+                        <option value="Medavakkam Clinic" selected>Medavakkam Clinic</option>
+                        <option value="Kolathur Clinic">S.Kolathur Clinic</option>
+                    </select>
+                </div>
+                
+                <!-- Field 4 & 5: Horizontal Date & Auto-Filtering Time Dropdown Row -->
+                <div class="grid grid-cols-2 gap-3">
                     <div>
-                        <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Target Date *</label>
-                        <input type="date" id="modalDate" required class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
+                        <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Preferred Date *</label>
+                        <!-- Added an onchange listener to update slot availability whenever the date shifts -->
+                        <input type="date" id="modalDate" required onchange="updateAvailableTimeSlots()" class="w-full bg-slate-50 border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-medical-500 focus:bg-white transition-all font-medium text-slate-700">
                     </div>
                     <div>
-                        <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">Select Location Branch *</label>
-                        <select id="modalBranch" class="w-full bg-slate-50 border border-gray-200 rounded-xl p-2.5 text-sm focus:outline-none focus:border-medical-500">
-                            <option value="Medavakkam HQ Office">Medavakkam HQ</option>
-                            <option value="S. Kolathur Branch Center">S. Kolathur Branch</option>
+                        <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Preferred Time *</label>
+                        <!-- Options generated dynamically by JavaScript system functions -->
+                        <select id="modalTime" required class="w-full bg-slate-50 border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-medical-500 focus:bg-white transition-all font-medium text-slate-700">
+                            <option value="" disabled selected hidden>Select Date First</option>
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="w-full py-3 bg-medical-600 hover:bg-medical-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-colors">
-                    Confirm & Send Alert Email
+
+                <!-- Field 6: Health Concern Optional Input -->
+                <div>
+                    <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Health Concern (Optional)</label>
+                    <input type="text" id="modalConcern" placeholder="e.g. Hair Fall, PCOS, Thyroid" class="w-full bg-slate-50 border border-gray-200 rounded-lg p-2 text-xs focus:outline-none focus:border-medical-500 focus:bg-white transition-all font-medium">
+                </div>
+                
+                <!-- Compact Submission Button -->
+                <button type="submit" class="w-full py-2.5 bg-medical-600 hover:bg-medical-700 text-white font-extrabold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all active:scale-[0.99] mt-1">
+                    Book Appointment
                 </button>
             </form>
         </div>
@@ -1472,6 +1585,63 @@ tailwind.config = {
     </div>
 
 <script>
+    // ALL AVAILABLE MASTER TIME SLOTS FOR DR. LAKSHMI'S CLINIC POOL
+        const MASTER_CLINICAL_SLOTS = [
+            "09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM",
+            "05:00 PM", "05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM", "08:00 PM", "08:30 PM"
+        ];
+
+        // DYNAMIC SLOT FILTER ENGINE: Calculates and removes already booked spots automatically
+        function updateAvailableTimeSlots() {
+            const dateInput = document.getElementById('modalDate').value;
+            const branchInput = document.getElementById('modalBranch').value;
+            const timeSelect = document.getElementById('modalTime');
+            
+            if (!timeSelect) return;
+            
+            // Clear existing dropdown states
+            timeSelect.innerHTML = '';
+            
+            if (!dateInput) {
+                timeSelect.innerHTML = '<option value="" disabled selected hidden>Select Date First</option>';
+                return;
+            }
+
+            // Retrieve current database of booked parameters from local storage
+            const currentBookings = JSON.parse(localStorage.getItem('clinicBookingsDatabase') || '[]');
+            
+            // Build filter string matching this exact appointment window
+            const takenSlots = currentBookings
+                .filter(b => b.date === dateInput && b.branch === branchInput)
+                .map(b => b.time);
+
+            // Compute open options remaining
+            const availableSlots = MASTER_CLINICAL_SLOTS.filter(slot => !takenSlots.includes(slot));
+
+            if (availableSlots.length === 0) {
+                timeSelect.innerHTML = '<option value="" disabled selected>No slots left for this day</option>';
+                return;
+            }
+
+            // Populate remaining available options cleanly
+            timeSelect.innerHTML = '<option value="" disabled selected hidden>Select Time</option>';
+            availableSlots.forEach(slot => {
+                const opt = document.createElement('option');
+                opt.value = slot;
+                opt.innerText = slot;
+                timeSelect.appendChild(opt);
+            });
+        }
+
+        // Hook automatic date constraint rules into your initialization event flow
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set minimum date to today so patients cannot book past dates accidentally
+            const dateField = document.getElementById('modalDate');
+            if(dateField) {
+                const today = new Date().toISOString().split('T')[0];
+                dateField.min = today;
+            }
+        });
         document.addEventListener("DOMContentLoaded", function() {
             AOS.init({ duration: 800, once: true });
             setupDraggableSlider();
@@ -1662,20 +1832,107 @@ tailwind.config = {
         function closeReviewPopup() { hideDisplayElement('reviewExpansionPanel'); }
 
         // SECURE CONTEXT APPOINTMENT METRIC TRANSMISSION HANDLER
+let successTimerInterval = null;
+        
+        // 🚀 LIVE DR. LAKSHMI PRODUCTION WEBHOOK ROUTE CONTEXT
+        const GOOGLE_SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycby0woGpXYpvkgzfMdR79-3k9LF-gAgON1Y3dbXK9BzEOb7y0hzA3a5YM2seHcq0wBwUIQ/exec";
+
         function processFormTransmission(event, strategy) {
             event.preventDefault();
+            
+            // Core Fallback Fields Mapping depending on Form Origins Strategy
             let patientName = strategy === 'modal' ? document.getElementById('modalName').value.trim() : document.getElementById('directName').value.trim();
             let contactNumber = strategy === 'modal' ? document.getElementById('modalPhone').value.trim() : document.getElementById('directPhone').value.trim();
             let hub = strategy === 'modal' ? document.getElementById('modalBranch').value : document.getElementById('directBranch').value;
             
-            alert(`✓ Success!\n\nThank you, ${patientName}. An automated data notification email has been generated and routed straight to the care desk management system at our ${hub.toUpperCase()} branch.\n\nOur team will call you back at ${contactNumber} within a few business hours to confirm your consultation time.`);
+            // Unified extraction paths targeting newly updated date and time pickers
+            let appointmentDate = strategy === 'modal' ? document.getElementById('modalDate').value : document.getElementById('directDate').value;
+            let appointmentTime = strategy === 'modal' ? document.getElementById('modalTime').value : document.getElementById('directTime').value;
+            let healthConcern = strategy === 'modal' ? document.getElementById('modalConcern').value.trim() : document.getElementById('directMsg').value.trim();
+
+            if(!appointmentTime) {
+                alert("Please select an available consultation time slot.");
+                return;
+            }
+
+            // Save booked parameters securely to browser context (blocks slot duplication)
+            const currentBookings = JSON.parse(localStorage.getItem('clinicBookingsDatabase') || '[]');
+            currentBookings.push({ date: appointmentDate, branch: hub, time: appointmentTime });
+            localStorage.setItem('clinicBookingsDatabase', JSON.stringify(currentBookings));
             
-            if(strategy === 'modal') { 
-                document.getElementById('modalAppointmentForm').reset(); 
-                closeAppointmentModal(); 
+            // Safe Document UI Form Reset Triggers
+            if (strategy === 'modal') {
+                document.getElementById('modalAppointmentForm').reset();
+                updateAvailableTimeSlots();
+                closeAppointmentModal();
             } else {
                 document.getElementById('clinicDirectContactForm').reset();
             }
+
+            // --- BUILD UNIFIED DATA PACKET PAYLOAD ---
+            const formDataPayload = {
+                name: patientName,
+                phone: contactNumber,
+                branch: hub,
+                date: appointmentDate,
+                time: appointmentTime,
+                concern: healthConcern
+            };
+
+            // --- TRANSMIT LIVE METRICS TO GOOGLE SHEET & TRIGGER MAIL ALERTS ---
+            fetch(GOOGLE_SHEET_WEBHOOK_URL, {
+                method: "POST",
+                mode: "no-cors", // Bypasses browser CORS restriction limits seamlessly
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formDataPayload)
+            })
+            .then(() => console.log("✓ Operational Stream Metrics Transmitted to Google Cloud Engine successfully."))
+            .catch(err => console.error("Cloud pipeline data sync stream tracking error:", err));
+
+            // --- INJECT DYNAMIC TEXT MESSAGING INTO SUCCESS OVERLAY ---
+            const successTitleEl = document.getElementById('bookingSuccessModal').querySelector('h4');
+            const successDescEl = document.getElementById('bookingSuccessModal').querySelector('p');
+            
+            if (strategy === 'direct') {
+                // Apply specific requested wording for your direct layout form view
+                if(successTitleEl) successTitleEl.innerText = "Thank You!";
+                if(successDescEl) successDescEl.innerText = "Your appointment request has been received.";
+            } else {
+                // Keep default messaging parameters for standard quick popup views
+                if(successTitleEl) successTitleEl.innerText = "Appointment Request Received";
+                if(successDescEl) successDescEl.innerText = "Thank you for reaching out to us.";
+            }
+
+            // Populate text descriptors inside card body dynamically
+            document.getElementById('successReceiptName').innerText = patientName;
+            document.getElementById('successReceiptBranch').innerText = hub;
+            document.getElementById('successReceiptDateTime').innerText = `${appointmentDate} @ ${appointmentTime}`;
+
+            // Build pre-formatted message text string for the patient's WhatsApp routing
+            const messageString = encodeURIComponent(`Hi Dr. Lakshmi's Homoeo Clinic, I just requested an appointment via your website.\n\nName: ${patientName}\nBranch: ${hub}\nSchedule: ${appointmentDate} at ${appointmentTime}\nMobile: ${contactNumber}`);
+            document.getElementById('successWhatsAppBtn').href = `https://wa.me/919677173387?text=${messageString}`;
+
+            // Reveal the popup cleanly
+            showDisplayElement('bookingSuccessModal');
+
+            // Initialize automated countdown tick
+            let timeLeft = 10;
+            const counterLabel = document.getElementById('successCountdown');
+            if(counterLabel) counterLabel.innerText = timeLeft;
+            
+            clearInterval(successTimerInterval);
+            successTimerInterval = setInterval(() => {
+                timeLeft--;
+                if(counterLabel) counterLabel.innerText = timeLeft;
+                if(timeLeft <= 0) {
+                    closeSuccessModal();
+                }
+            }, 1000);
+        }
+
+        function closeSuccessModal() {
+            clearInterval(successTimerInterval);
+            hideDisplayElement('bookingSuccessModal');
         }
     </script>
 </body>
