@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/laksh (1).png">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -192,7 +193,7 @@ tailwind.config = {
                         
                         <!-- Lower Tagline Row Block -->
                         <span class="text-xs sm:text-sm font-semibold tracking-normal text-medical-600/80 italic block leading-none truncate">
-                            Families' Health Destination
+                            Familie's Health Destination
                         </span>
                     </div>
                 </a>
@@ -447,10 +448,10 @@ tailwind.config = {
 
             </div>
         </section>
-        <!-- ========================================================= -->
-<!--   PREMIUM TIMELINE DESIGN: CARE FOR EVERY STAGE OF LIFE   -->
 <!-- ========================================================= -->
-<section id="care-stages" class="py-24 bg-slate-50 px-4 sm:px-6 relative overflow-hidden select-none border-t border-b border-gray-200/60">
+<!--   PREMIUM TIMELINE DESIGN: MAX PERFORMANCE DESKTOP & MOBILE -->
+<!-- ========================================================= -->
+<section id="care-stages" class="py-12 md:py-12 bg-slate-50 px-4 sm:px-6 relative overflow-hidden select-none border-t border-b border-gray-200/60">
     
     <!-- Abstract background glow elements to elevate visual depth -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-medical-500/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -458,7 +459,7 @@ tailwind.config = {
     <div class="max-w-5xl mx-auto relative">
         
         <!-- Section Header Structure -->
-        <div class="text-center max-w-2xl mx-auto mb-20">
+        <div class="text-center max-w-2xl mx-auto mb-16 md:mb-20">
             <span class="text-xs font-black tracking-widest text-medical-600 uppercase bg-white border border-slate-200/80 shadow-sm rounded-full px-3.5 py-1.5 inline-block mb-3">
                 The Lifecycle Continuity Roadmap
             </span>
@@ -470,21 +471,29 @@ tailwind.config = {
             </p>
         </div>
 
-        <!-- Central Connecting Timeline Backbone Line (Hidden on tiny mobile screens) -->
+        <!-- Central Connecting Timeline Backbone Line (Hidden completely on Mobile) -->
         <div class="absolute left-1/2 top-[240px] bottom-12 w-0.5 bg-gradient-to-b from-medical-600 via-slate-200 to-transparent transform -translate-x-1/2 hidden md:block"></div>
 
         <!-- TIMELINE GRID CONTAINER -->
-        <div class="space-y-16 md:space-y-24 relative">
+        <div class="space-y-12 md:space-y-24 relative">
 
-            <!-- ROW 1: CHILDREN'S CARE (Left Content, Right Image) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
-                <!-- Center point visual node tracker -->
+            <!-- ROW 1: CHILDREN'S CARE -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center relative">
+                <!-- Center point visual node tracker (Hidden on Mobile) -->
                 <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white border-4 border-medical-600 z-10 hidden md:block"></div>
                 
-                <!-- Text Container (Left side) -->
-                <div class="space-y-3 md:text-right order-2 md:order-1 bg-white md:bg-transparent p-6 md:p-0 rounded-3xl border border-slate-100 md:border-none shadow-sm md:shadow-none">
-                    <div class="flex items-center gap-2 md:justify-end">
-                        <span class="text-2xl">👶</span>
+                <!-- Graphic Image Mask (Forces to top on Mobile via order-1) -->
+                <div class="order-1 md:order-2 flex justify-center md:justify-start md:pl-12">
+                    <div class="w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full border-4 border-white shadow-md overflow-hidden aspect-square group relative flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600" 
+                             alt="Children's Care Pathway" 
+                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Text Container (Forces below image on Mobile via order-2, left-aligned on mobile, right-aligned on desktop) -->
+                <div class="space-y-3 text-left md:text-right order-2 md:order-1 bg-white md:bg-transparent p-5 sm:p-6 md:p-0 rounded-3xl border border-slate-100 md:border-none shadow-sm md:shadow-none">
+                    <div class="flex items-center gap-2 justify-start md:justify-end">
                         <h4 class="text-xl font-black text-slate-900 tracking-tight">Children's Care</h4>
                     </div>
                     <p class="text-gray-500 text-xs sm:text-sm font-medium leading-relaxed max-w-md md:ml-auto">
@@ -492,35 +501,25 @@ tailwind.config = {
                     </p>
                     <span class="inline-block text-[11px] font-bold text-medical-600 bg-medical-50/80 px-2.5 py-0.5 rounded-md border border-medical-100">Safe & Side-Effect Free</span>
                 </div>
-                
-                <!-- Graphic Image Mask (Right side) -->
-                <div class="order-1 md:order-2 flex justify-start md:justify-start md:pl-12">
-                    <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-white shadow-md overflow-hidden aspect-square group relative flex-shrink-0">
-                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600" 
-                             alt="Children's Care Pathway" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                </div>
             </div>
 
-            <!-- ROW 2: ADULT & WOMEN'S HEALTH (Right Content, Left Image) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
-                <!-- Center point visual node tracker -->
+            <!-- ROW 2: ADULT & WOMEN'S HEALTH -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center relative">
+                <!-- Center point visual node tracker (Hidden on Mobile) -->
                 <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white border-4 border-medical-600 z-10 hidden md:block"></div>
                 
-                <!-- Graphic Image Mask (Left side) -->
-                <div class="flex justify-start md:justify-end md:pr-12">
-                    <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-white shadow-md overflow-hidden aspect-square group relative flex-shrink-0">
-                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600" 
+                <!-- Graphic Image Mask (Forces to top on Mobile via order-1) -->
+                <div class="order-1 flex justify-center md:justify-end md:pr-12">
+                    <div class="w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full border-4 border-white shadow-md overflow-hidden aspect-square group relative flex-shrink-0">
+                        <img src="assets/womens.png" 
                              alt="Adults & Women's Health Treatment Track" 
                              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                     </div>
                 </div>
 
-                <!-- Text Container (Right side) -->
-                <div class="space-y-3 bg-white md:bg-transparent p-6 md:p-0 rounded-3xl border border-slate-100 md:border-none shadow-sm md:shadow-none">
+                <!-- Text Container (Forces below image on Mobile via order-2) -->
+                <div class="space-y-3 order-2 bg-white md:bg-transparent p-5 sm:p-6 md:p-0 rounded-3xl border border-slate-100 md:border-none shadow-sm md:shadow-none text-left">
                     <div class="flex items-center gap-2">
-                        <span class="text-2xl">👨‍👩‍👧</span>
                         <h4 class="text-xl font-black text-slate-900 tracking-tight">Adult & Women's Health</h4>
                     </div>
                     <p class="text-gray-600 text-xs sm:text-sm font-medium leading-relaxed max-w-md">
@@ -530,30 +529,29 @@ tailwind.config = {
                 </div>
             </div>
 
-            <!-- ROW 3: SENIOR WELLNESS (Left Content, Right Image) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
-                <!-- Center point visual node tracker -->
+            <!-- ROW 3: SENIOR WELLNESS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center relative">
+                <!-- Center point visual node tracker (Hidden on Mobile) -->
                 <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white border-4 border-medical-600 z-10 hidden md:block"></div>
                 
-                <!-- Text Container (Left side) -->
-                <div class="space-y-3 md:text-right order-2 md:order-1 bg-white md:bg-transparent p-6 md:p-0 rounded-3xl border border-slate-100 md:border-none shadow-sm md:shadow-none">
-                    <div class="flex items-center gap-2 md:justify-end">
-                        <span class="text-2xl">👴</span>
+                <!-- Graphic Image Mask (Forces to top on Mobile via order-1) -->
+                <div class="order-1 md:order-2 flex justify-center md:justify-start md:pl-12">
+                    <div class="w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full border-4 border-white shadow-md overflow-hidden aspect-square group relative flex-shrink-0">
+                        <img src="assets/senior.png" 
+                             alt="Senior Geriatric Wellness Track" 
+                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Text Container (Forces below image on Mobile via order-2, left-aligned on mobile, right-aligned on desktop) -->
+                <div class="space-y-3 text-left md:text-right order-2 md:order-1 bg-white md:bg-transparent p-5 sm:p-6 md:p-0 rounded-3xl border border-slate-100 md:border-none shadow-sm md:shadow-none">
+                    <div class="flex items-center gap-2 justify-start md:justify-end">
                         <h4 class="text-xl font-black text-slate-900 tracking-tight">Senior Wellness</h4>
                     </div>
                     <p class="text-gray-500 text-xs sm:text-sm font-medium leading-relaxed max-w-md md:ml-auto">
                         Joint pain, arthritis, chronic health concerns, mobility support, and healthy aging. Protecting long-term vitality while minimizing organ stress and toxicity filters.
                     </p>
                     <span class="inline-block text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-100">Mobility & Vitality Support</span>
-                </div>
-                
-                <!-- Graphic Image Mask (Right side) -->
-                <div class="order-1 md:order-2 flex justify-start md:justify-start md:pl-12">
-                    <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-white shadow-md overflow-hidden aspect-square group relative flex-shrink-0">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600" 
-                             alt="Senior Geriatric Wellness Track" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                    </div>
                 </div>
             </div>
 
@@ -648,7 +646,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
                         <!-- Right Image Pillar -->
                         <div class="lg:col-span-5 relative order-1 lg:order-2" data-aos="fade-left">
                             <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 max-w-sm mx-auto lg:max-w-none">
-                                <img src="assets/Dr lakshmi.png" alt="Dr. B.N.R. Vijayalakshmi" class="w-full h-[380px] sm:h-[460px] object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80'">
+                                <img src="assets/Dr lakshmi (1).png" alt="Dr. B.N.R. Vijayalakshmi" class="w-full h-[380px] sm:h-[460px] object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80'">
                             </div>
                            <!-- Modern Glassmorphism Floating Badge -->
                             <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-6 bg-white/80 backdrop-blur-md rounded-2xl shadow-xl shadow-slate-900/5 border border-white/60 p-4 flex items-center gap-4 w-[220px] transition-all duration-300 hover:-translate-y-1">
@@ -739,7 +737,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 3: Asthma & Allergy -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Asthma & Allergy Management" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/asthma.png" alt="Asthma & Allergy Management" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Respiratory</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -756,7 +754,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 4: Skin & Hair -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Skin & Hair Therapeutics" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/skincare.png" alt="Skin & Hair Therapeutics" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Dermatology</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -773,7 +771,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 5: Joint Pain & Arthritis -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80" alt="Joint Pain Therapeutics" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/joint.png" alt="Joint Pain Therapeutics" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Rheumatology</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -790,7 +788,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 6: Digestive Health -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=600&q=80" alt="Digestive Recovery Systems" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/Digestive.png" alt="Digestive Recovery Systems" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Gastroenterology</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -807,7 +805,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 7: Thyroid & Hormonal Health -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Thyroid Evaluation" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/thyroid.png" alt="Thyroid Evaluation" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Endocrinology</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -824,7 +822,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 8: Stress, Anxiety & Sleep -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" alt="Mental Wellness" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/stress.png" alt="Mental Wellness" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Mental Health</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -841,7 +839,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 9: Frequent Cold & Cough -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="Respiratory Care" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/cold.png" alt="Respiratory Care" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Immune Core</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -858,7 +856,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             <!-- Card 10: Immunity Support Care -->
             <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-all duration-300 md:col-span-2 lg:col-span-3 lg:max-w-md lg:mx-auto w-full">
                 <div class="h-48 w-full bg-slate-100 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" alt="Immunity Optimization" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/immunity.png" alt="Immunity Optimization" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <span class="absolute top-4 left-4 px-2.5 py-1 bg-medical-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-md">Vitality</span>
                 </div>
                 <div class="p-6 flex flex-col flex-grow justify-between min-h-[250px]">
@@ -1361,13 +1359,18 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
                                         <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1.5">Preferred Time *</label>
                                         <select id="directTime" required class="w-full bg-slate-50 border border-gray-200 focus:border-medical-500 focus:ring-2 focus:ring-medical-100 rounded-xl p-3 text-xs sm:text-sm focus:outline-none transition-all font-medium text-slate-700">
                                             <option value="" disabled selected hidden>Select Time</option>
-                                            <option value="09:00 AM">09:00 AM</option>
-                                            <option value="09:30 AM">09:30 AM</option>
+                                            
                                             <option value="10:00 AM">10:00 AM</option>
                                             <option value="10:30 AM">10:30 AM</option>
                                             <option value="11:00 AM">11:00 AM</option>
                                             <option value="11:30 AM">11:30 AM</option>
                                             <option value="12:00 PM">12:00 PM</option>
+                                            <option value="09:00 AM">12:30 PM</option>
+                                            <option value="09:30 AM">01:00 PM</option>
+                                            <option value="09:30 AM">01:30 PM</option>
+                                            <option value="09:30 AM">02:00 PM</option>
+                                            <option value="08:30 PM">04:00 PM</option>
+                                            <option value="08:30 PM">04:30 PM</option>
                                             <option value="05:00 PM">05:00 PM</option>
                                             <option value="05:30 PM">05:30 PM</option>
                                             <option value="06:00 PM">06:00 PM</option>
@@ -1375,7 +1378,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
                                             <option value="07:00 PM">07:00 PM</option>
                                             <option value="07:30 PM">07:30 PM</option>
                                             <option value="08:00 PM">08:00 PM</option>
-                                            <option value="08:30 PM">08:30 PM</option>
+                                            
                                         </select>
                                     </div>
                                 </div>
@@ -1417,21 +1420,28 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             
             <div class="md:col-span-4 space-y-4">
    <!-- Clean Footer Image Logo -->
-<div class="flex items-center gap-3 select-none">
+<!-- ========================================================= -->
+                <!--    SCALED-UP PREMIUM BRAND SIGNATURE BLOCKS (FOOTER/NAV)   -->
+                <!-- ========================================================= -->
+                <div class="flex items-center gap-4 select-none">
+                    <!-- Scaled image container up for an elegant look -->
                     <img src="assets/korv emr  (8).png" 
                          alt="Dr. Lakshmi's Homoeo Clinic Logo" 
-                         class="w-14 h-14 md:w-16 md:h-16 object-contain flex-shrink-0"
+                         class="w-16 h-16 md:w-20 md:h-20 object-contain flex-shrink-0"
                          onerror="this.style.border='1px solid #2da683';">
                     
-                    <!-- Compressed vertical line-height architecture to frame slogan beautifully against dark footer backdrops -->
-                    <div class="min-w-0 flex flex-col justify-center space-y-0.5">
-                        <span class="text-base font-extrabold text-white tracking-tight block leading-tight">
+                    <!-- Increased text sizing and layout tracking spacing fields -->
+                    <div class="min-w-0 flex flex-col justify-center space-y-1">
+                        <!-- Upgraded to text-lg with cleaner font presence -->
+                        <span class="text-lg font-black text-white tracking-tight block leading-tight">
                             Dr. Lakshmi's
                         </span>
-                        <span class="text-[10px] font-bold tracking-widest text-medical-400 uppercase block leading-none">
+                        <!-- Upgraded text from 10px to text-xs -->
+                        <span class="text-xs font-extrabold tracking-widest text-medical-400 uppercase block leading-none">
                             Homoeo Clinic
                         </span>
-                        <span class="text-[9px] font-medium tracking-normal text-slate-400 italic block leading-none pt-0.5 truncate">
+                        <!-- Upgraded slogan font metrics for crystal-clear reading transparency -->
+                        <span class="text-[11px] font-semibold tracking-wide text-slate-300 italic block leading-none pt-0.5 truncate">
                             Families' Health Destination
                         </span>
                     </div>
@@ -1439,21 +1449,15 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
                 
                 <p class="text-slate-300 max-w-xs leading-relaxed text-xs">
                 Dr. Lakshmi's Homeopathy Clinic provides personalized treatment
-    for a wide range of health concerns including skin disorders,
-    hair fall, thyroid issues, PCOS, allergies, asthma, joint pain,
-    digestive problems, and child health care.
+                for a wide range of health concerns including skin disorders,
+                hair fall, thyroid issues, PCOS, allergies, asthma, joint pain,
+                digestive problems, and child health care.
                 </p>
                 
                 <div class="flex gap-4 pt-2">
                     <a href="https://www.facebook.com/profile.php?id=61568765476317" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="Facebook">
                         <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                        </svg>
-                    </a>
-                    
-                    <a href="https://twitter.com" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-[#242642] flex items-center justify-center text-slate-300 hover:bg-medical-600 hover:text-white transition-all duration-300" title="Twitter">
-                        <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
                         </svg>
                     </a>
                     
@@ -1513,21 +1517,30 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
                         </div>
-                        <a href="mailto:info@drpiyushlaxmi.com" class="hover:text-white font-medium transition-colors">drlakshmishomoeoclinic@gmail.com
+                        <a href="mailto:drlakshmishomoeoclinic@gmail.com" class="hover:text-white font-medium transition-colors">drlakshmishomoeoclinic@gmail.com
 </a>
                     </div>
 
-                    <div class="flex items-start gap-3">
-                        <div class="mt-0.5 text-medical-400 flex-shrink-0">
+<div class="flex items-start gap-3">
+                        <div class="mt-1 text-medical-400 flex-shrink-0">
                             <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="12" cy="12" r="10"/>
                                 <polyline points="12 6 12 12 16 14"/>
                             </svg>
                         </div>
-                        <p class="leading-tight font-medium">
-                            Monday - Saturday:<br>
-                            <span class="text-slate-400 font-normal text-xs">10:00 AM - 8:30 PM</span>
-                        </p>
+                        <div class="text-sm font-semibold space-y-1.5">
+                            <p class="font-bold text-white tracking-wide">Monday - Saturday:</p>
+                            
+                            <!-- 🛠️ added whitespace-nowrap and hidden/sm:inline options to guarantee a clean line layout -->
+                            <p class="text-slate-300 font-medium text-xs tracking-tight whitespace-nowrap">
+                                10:00 AM - 02:00 PM <span class="text-slate-500 mx-1">|</span> 04:00 PM - 08:00 PM
+                            </p>
+                            
+                            <p class="text-rose-400 font-black text-[11px] pt-0.5 uppercase tracking-widest flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 inline-block animate-pulse"></span>
+                                Sunday: By Appointment Only
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1712,8 +1725,8 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
 <script>
     // ALL AVAILABLE MASTER TIME SLOTS FOR DR. LAKSHMI'S CLINIC POOL
         const MASTER_CLINICAL_SLOTS = [
-            "09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM",
-            "05:00 PM", "05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM", "08:00 PM", "08:30 PM"
+            "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "01:00 PM","01:30 PM","02:00 PM",
+            "04:00 PM","04:30 PM","05:00 PM", "05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM", "08:00 PM",
         ];
 
         // DYNAMIC SLOT FILTER ENGINE: Calculates and removes already booked spots automatically
@@ -1835,42 +1848,42 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
             },
             'allergy-care': {
                 title: "Asthma & Allergy Care",
-                image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80",
+                image: "assets/asthma.png",
                 desc: "Standard anti-allergy medications offer temporary blockages to histamine releases. Homeopathy, by contrast, desensitizes your overactive immune response pathways over time. Our treatments target root genetic and environmental vulnerabilities, providing long-term relief from wheezing, constant sneezing, chronic nasal congestion, and sinus pressure safely without inducing drowsiness or dependency."
             },
             'skin-care': {
                 title: "Skin & Hair Care",
-                image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80",
+                image: "assets/skincare.png",
                 desc: "Skin manifestations are outward expressions of internal metabolic or immunological imbalances. Suppressing them with strong chemical steroid creams can push the pathology deeper. Homeopathy addresses skin disorders from the inside out. We clear toxins and optimize systemic health to clear acne marks, heal raw eczematous layers, stop active hair root shrinkage, and stimulate natural, lasting tissue rejuvenation."
             },
             'joint-care': {
                 title: "Joint Pain & Arthritis Care",
-                image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=600&q=80",
+                image: "assets/joint.png",
                 desc: "Chronic pain management shouldn't mean relying indefinitely on painkillers that can irritate the stomach. Homeopathy focuses on reducing joint synovial fluid inflammation, restoring flexible mobility tracking parameters, and stopping progressive tissue degeneration. Our targeted natural treatments safely reduce muscle soreness, ease morning stiffness, and help you get back to an active lifestyle."
             },
             'digestive-care': {
                 title: "Digestive Health Care",
-                image: "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?auto=format&fit=crop&w=600&q=80",
+                image: "assets/Digestive.png",
                 desc: "Frequent antacids only offer brief, artificial neutralizations of stomach acid. Homeopathy works by normalizing gastric juices and restoring smooth intestinal motility patterns. Our constitutional path improves assimilation, heals chronic mucosal inflammation, reduces painful cramping spikes, and builds a resilient gut microbiome naturally."
             },
             'thyroid-care': {
                 title: "Thyroid & Hormonal Health",
-                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80",
+                image: "assets/thyroid.png",
                 desc: "Homeopathic thyroid care does not focus on supplying synthetic hormones. Instead, it aims to optimize the thyroid gland's natural performance. By balancing emotional and physiological root causes, we safely address chronic exhaustion, sluggish metabolism, unexpected weight gain, and related hormonal shifts."
             },
             'mental-wellness': {
                 title: "Stress, Anxiety & Sleep Care",
-                image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80",
+                image: "assets/stress.png",
                 desc: "Our mind-body constitutional remedies calm an overstimulated nervous system without using sedatives or forming chemical habits. By exploring individual emotional blueprints and stress triggers, we offer safe, natural assistance to lower panic spikes, quiet racing thoughts before bed, and improve deep sleep quality."
             },
             'respiratory-care': {
                 title: "Frequent Cold & Cough Care",
-                image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80",
+                image: "assets/cold.png",
                 desc: "Frequent respiratory issues suggest an easily compromised immune response. Homeopathic remedies safely break the cycle of chronic susceptibility by strengthening your natural ENT defense barriers, reducing recovery times, and decreasing the severity of seasonal triggers."
             },
             'immunity-care': {
                 title: "Immunity Support Care",
-                image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80",
+                image: "assets/immunity.png",
                 desc: "Our constitutional treatment is tailored to revive your primary vital force. By addressing nutrient assimilation, cellular energy, and stress responses, it strengthens resistance against seasonal pathogens and helps establish robust, long-term health metrics for adults and children who frequently fall sick."
             }
         };
@@ -1960,7 +1973,7 @@ From childhood allergies and immunity concerns to thyroid disorders, PCOS, joint
 let successTimerInterval = null;
         
         //  LIVE DR. LAKSHMI PRODUCTION WEBHOOK ROUTE CONTEXT
-        const GOOGLE_SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycby0woGpXYpvkgzfMdR79-3k9LF-gAgON1Y3dbXK9BzEOb7y0hzA3a5YM2seHcq0wBwUIQ/exec";
+        const GOOGLE_SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbw_nZGZzWatWOs3TOTr-QwKSFZfIou1kKiljffnXGrzGXGbajw7cU8XOr5BVUcRsvPhow/exec";
 
         function processFormTransmission(event, strategy) {
             event.preventDefault();
